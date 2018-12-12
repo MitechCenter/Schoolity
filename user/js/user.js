@@ -94,7 +94,7 @@ ShoolityApp.controller('ShoolityCtrl', function ($scope, $http) {
           $("#RunningProgress").addClass("fade");
         });
     }
-    let showID = 1;
+    let showID = 15;
     $scope.CurrentActivity = getPath(showID); // set for start up
     renewEvent();
     $scope.$on('CurrentActivity', function (event, CurrentActivity) {
@@ -175,13 +175,19 @@ ShoolityApp.controller('ShoolityCtrl', function ($scope, $http) {
   // ------------------------ KET THUC BANG HO SO HOC SINH -------------------------------//
 
   // ------------------------ QUAN LÝ THI LẠI ------------------------------------//
-  // Tải header của table Đăng ký thi lại
+  // Tải header của table cap nhap diem
+
+
+  $scope.isHideInColumn = function (id) {
+    let notArr = ['0x01', '0x02', '0x03'];
+    return notArr.includes(id);
+  }
   $http.get("user/json/quanlythilai/headerDangkithilai.json")
     .then(function (response) {
       $scope.thilai = response.data;
     });
 
-  // Tải danh sách học sinh đăng ký môn thi lại
+  // Tải danh sách học sinh cap nhap môn thi lại
   $http.get("user/json/quanlythilai/dkymonthilai.json")
     .then(function (response) {
       var data;

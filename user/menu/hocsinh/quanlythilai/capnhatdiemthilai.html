@@ -55,7 +55,6 @@
             <thead>
                 <tr>
                     <div>
-
                         <th ng-repeat="h in thilai" style='width:{{h.width}}'>
                             <div ng-if="isHideInColumn(h.id)">
                                 <div class="header-trixxx">{{h.mon}}</div>
@@ -72,8 +71,6 @@
                     </div>
                 </tr>
             </thead>
-
-
             <tbody class="table-fixed-header-wrapper table-container">
 
                 <xxx>
@@ -99,25 +96,23 @@
             </tbody>
         </table>
     </div>
-
-
-
-    <p style="color:red;margin-bottom: 50px;">
-        Lưu ý:
-        <br>
-        &nbsp;&nbsp;- Các môn học được phép chọn đăng ký thi lại là môn học có TBm cả năm &lt; 5.0
-        hoặc có kết quả xếp loại CĐ
-        <br>
-        &nbsp;&nbsp;- Các môn học có TBm hoặc kết quả xếp loại tô màu đỏ là các môn học bắt buộc
-        phải đăng ký thi lại để được lên lớp. (TBM &lt; 3.5, cả Văn và Toán &lt; 5.0 hoặc xếp loại
-        CĐ)
-        <br>
-        &nbsp;&nbsp;- Học sinh được phép đăng ký một hoặc nhiều môn để thi lại.
-        <br>
-        &nbsp;&nbsp;- Kết quả kiểm tra lại được lấy thay thế cho kết quả xếp loại cả năm học của
-        môn học đó để tính lại điểm trung bình các môn cả năm học và xếp loại lại về học lực; nếu
-        đạt loại trung bình thì được lên lớp.
-
-    </p>
-    <div class="Clear"></div>
 </div>
+
+<p style="color:red;margin-bottom: 50px;">
+    Lưu ý:
+    <br>
+    &nbsp;&nbsp;- Các môn học được phép chọn đăng ký thi lại là môn học có TBm cả năm &lt; 5.0
+    hoặc có kết quả xếp loại CĐ
+    <br>
+    &nbsp;&nbsp;- Các môn học có TBm hoặc kết quả xếp loại tô màu đỏ là các môn học bắt buộc
+    phải đăng ký thi lại để được lên lớp. (TBM &lt; 3.5, cả Văn và Toán &lt; 5.0 hoặc xếp loại
+    CĐ)
+    <br>
+    &nbsp;&nbsp;- Học sinh được phép đăng ký một hoặc nhiều môn để thi lại.
+    <br>
+    &nbsp;&nbsp;- Kết quả kiểm tra lại được lấy thay thế cho kết quả xếp loại cả năm học của
+    môn học đó để tính lại điểm trung bình các môn cả năm học và xếp loại lại về học lực; nếu
+    đạt loại trung bình thì được lên lớp.
+
+</p>
+<div class="Clear"></div>
