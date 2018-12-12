@@ -1,0 +1,41 @@
+<div class="sidebar" ng-controller="MenuCtrl">
+  <nav class="sidebar-nav">
+    <ul class="nav">
+      <!-- -->
+      <li class="nav-item nav-dropdown" ng-repeat="lv1Menu in LeftMenu">
+        <a class="nav-link nav-dropdown-toggle" href="{{lv1Menu.path}}" id="{{lv1Menu.id}}">
+          <i class="{{lv1Menu.ic}}"></i> {{lv1Menu.name}}</a>
+        <!-- For First menu level -->
+        <ul class="nav-dropdown-items">
+          <!-- For Seconds menu level -->
+          <div ng-repeat="lv2Menu in lv1Menu.sub">
+            <!-- IF have menu lv3 -->
+            <div ng-if="lv2Menu.sub !== undefined">
+              <li class="nav-item nav-dropdown">
+                <a class="nav-link nav-dropdown-toggle" href="{{lv2Menu.path}}" id="{{lv2Menu.id}}">
+                  <i class="{{lv2Menu.ic}}"></i> {{lv2Menu.name}}
+                </a>
+                <!-- For Third menu level -->
+                <ul class="nav-dropdown-items">
+                  <li class="nav-item" ng-repeat="lv3Menu in lv2Menu.sub">
+                    <a class="nav-link" href="{{lv3Menu.path}}" id="{{lv3Menu.id}}">
+                      <i class="{{lv3Menu.ic}}"></i> {{lv3Menu.name}}</a>
+                  </li>
+                </ul>
+              </li>
+            </div>
+            <!-- IF don't have menu lv3 -->
+            <div ng-if="lv2Menu.sub === undefined">
+              <li class="nav-item">
+                <a class="nav-link" href="{{lv2Menu.path}}" id="{{lv2Menu.id}}">
+                  <i class="{{lv2Menu.ic}}"></i> {{lv2Menu.name}}
+                </a>
+              </li>
+            </div>
+          </div>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <button class="sidebar-minimizer brand-minimizer" type="button"></button>
+</div>

@@ -1,0 +1,348 @@
+.schollity-SearchPanel-Title{
+    height: initial;
+    padding: 8px;
+    background: #51aab2 !important;
+    text-align: left;
+    position: relative;
+    color: #fff;
+    font-weight: bold;
+    vertical-align: bottom;
+    font-size: 100%;
+    width: 1210px;
+}
+.icon-search-file {
+    width: 18px;
+    height: 20px;
+    background-image: url('./img/icon_search_file.png');
+    vertical-align: bottom;
+    display: inline-block;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+}
+#btn-panel-collapse{
+    position: absolute;
+    top: 13px;
+    right: 5px;
+    cursor: pointer;
+    background-image: url('./img/icon_arrow_right.png');
+    transform: rotate(270deg);
+    background-color: #3698a7;
+    border-radius: 100%;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    vertical-align: middle;
+    
+}
+/* table */
+.table-fixed-header-wrapper{
+    background-color: #51aab2;
+    position: relative;
+    overflow-x: auto;
+}
+
+.table-fixed-header-wrapper {
+    position: relative;
+    background: #3698a7;
+    overflow-x: auto;
+    text-align: center;
+    padding-bottom: 60px 20px;
+}
+.table-fixed-header-wrapper .table-container {
+    overflow-y: auto;
+    height: 350px;
+}
+td{
+   border-right: 1px solid #fff;
+}
+
+.header-trixxx{
+    padding: 4px;
+    color: #fff
+}
+.checkbox{
+ border: 1px solid #51aab2 ;
+ /* float: left; */
+    
+}
+
+/******************************************capnhapdiemthilai***********************************/
+.abc {
+padding-top: 6px;
+margin-bottom: 8px;
+display: flex;
+justify-content: center;
+font-weight: bold
+}
+.select-mon{
+    font: bold;
+    text-align: center;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/****************************************Tree *************************************************/
+  /* Remove default bullets */
+
+.tree-view{
+    width: 15%
+}
+  /* Remove margins and padding from the parent ul */
+  #myUL {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the caret/arrow */
+  .caret {
+    cursor: pointer; 
+    user-select: none; /* Prevent text selection */
+  }
+  
+  /* Create the caret/arrow with a unicode, and style it */
+  .caret::before {
+    content: "\25B6";
+    color: black;
+    display: inline-block;
+    margin-right: 6px;
+  }
+  
+  /* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+  .caret-down::before {
+    transform: rotate(90deg); 
+  }
+  
+  /* Hide the nested list */
+  .nested {
+    display: none;
+  }
+  
+  /* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+  .active {
+    display: block;
+  }
+
+  /************************************texxt************************************/
+
+  .f-16{
+    font-size: 1.13em;
+  
+
+  }
+  .light-green{
+    color: #51aab2;
+  }
+  .text-center{
+      text-align: center
+  }
+
+  hr {
+   
+    border: 0;
+    border-top: 1px solid #eee;
+    box-sizing: content-box;
+    height: 0;
+}
+
+/*****************************tab-control**************************/
+body {font-family: Arial;}
+                                
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  color: #51aab2;
+  border-bottom-right-radius: 1px;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #51aab2;
+    background-color: transparent;
+    font-weight: bold;
+}
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    color: black;
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+/* Style the close button */
+.topright {
+  float: right;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+
+
+/*********************************quan li thong tin topt nghiep*************************/
+.tab{
+  color: #51aab2;
+
+}
+select {
+  border-radius: 0px;
+  border-color:#fff 
+}
+
+
+.custom-select {
+  display: inline-block;
+  width: 100%;
+  height: calc(2.0625rem + 2px);
+  padding: 0.375rem 1.75rem 0.375rem 0.75rem;
+  line-height: 1.5;
+  color: #5c6873;
+  vertical-align: middle;
+  background: none !important;
+  background-size: 8px 10px;
+  border: 1px solid #e4e7ea;
+  border-radius: 0.25rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.control-tab{
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+
+}
+ .editor-label {
+  width: 35%;
+  font-weight: normal;
+    color: #6c6c6c;
+    display: inline;
+    padding-top: 8px;
+    padding-right: 8px;
+    width: 35%;
+    float: left;
+    text-align: right;
+    vertical-align: middle;
+    padding-bottom: 10px;
+}
+ .editor-field {
+  position: relative;
+  width: 65%;
+  float: left;
+}
+.editor-field {
+  padding-bottom: 10px;
+}
+
+.editor-field{
+  width: 65%;
+}
+input{
+  width: 100%;
+    box-shadow: none;
+    border: 1px solid lightgray;
+}
+
+
+/************************buntton tìm kiếm ****************************/
+
+
+.Panel-Button {
+  background-color: white;
+  padding: 10px 0;
+  border-top: 1px solid #e6e6e6;
+  clear: both;
+  padding: 8px;
+  text-align: center;
+
+  margin: 0px;
+    display: inline-block;
+  
+}
+
+.widget-input{
+  font-family: Arial, Helvetica, sans-serif !important;
+
+}
+
+ input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+.btn-icon-search {
+  background-image: url("./img/icon_search.png") !important;
+  margin-right: 29px;
+}
+.btn-icon {
+  position: relative;
+  padding-left: 30px;
+  background-repeat: no-repeat !important;
+  background-position: 12px 8px !important;
+  background-size: 14px;
+}
+.btn-icon {
+  position: relative;
+  padding-left: 30px;
+  background-repeat: no-repeat !important;
+  background-position: 12px 8px !important;
+  background-size: 14px;
+}
+.btn {
+  font-family: Arial, Helvetica, sans-serif !important;
+  color: white !important;
+  height: 32px;
+  background-image: none;
+  padding: 0 20px;
+  border-radius: 5px;
+  font-size: 13px;
+  border-radius: 3px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid transparent;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+
+.p-button{
+  text-align: center
+}
+
+
+.center {
+  text-align: center;
+  margin-bottom: 5px;
+}

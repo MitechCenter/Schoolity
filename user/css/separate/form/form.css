@@ -1,0 +1,14 @@
+.form-row{
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 15px;
+}
+
+.form-row .row-icon{
+    padding: .5rem!important;
+}
+
+.form-row .row-control{
+    flex: 1;
+    margin-left: auto
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+   <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
+   <meta name="author" content="Łukasz Holeczek">
+   <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+   <script src="../jslib/kmlib.js"></script>
+   <script src="js/user.js"></script>
+   <base href="../">
+   <!-- Icons-->
+   <link href="vendors/@coreui/icons/css/coreui-icons.min.css" rel="stylesheet">
+   <link href="vendors/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
+   <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+   <link href="vendors/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+   
+   <link href="./css/style.css" rel="stylesheet">
+   <link href="./css/material-design.css" rel="stylesheet">
+   <link href="./css/form_user.css" rel="stylesheet">
+   <link href="./css/separate/alert/alert.css" rel="stylesheet">
+   <link href="./css/separate/elements/checkbox.css" rel="stylesheet">
+   <link href="./css/separate/elements/search.css" rel="stylesheet">
+   <link href="./css/separate/elements/steps.css" rel="stylesheet">
+   <link href="./css/separate/elements/button.css" rel="stylesheet">
+   <link href="./css/separate/form/form.css" rel="stylesheet">
+   <link href="./css/separate/tables/table.css" rel="stylesheet">
+   <link href="./css/progress/pace.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="./css/separate/pagination/pagination.css">
+ 
+</head>
+<body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
+   <div ng-app="ShoolityApp" ng-controller="ShoolityCtrl">
+      <!-- Select location here -->
+      Chọn Tỉnh Thành 
+      <select ng-model="tinh" ng-options="x.ten for x in tinhthanh" ng-change="selectTinh()">
+         <option value="">--- Tỉnh thành ---</option>
+      </select>
+
+      Chọn Quận Huyện 
+      <select id="huyen" ng-model="huyen" ng-options="x.ten for x in quanhuyen|filter:{id_tt:tinh.id}" ng-click="" disabled ng-change="selectHuyen()">
+         <option value="">--- Quận/Huyện ---</option>
+      </select>
+
+      Chọn Xã Phường
+      <select id="xaphuong" ng-model="xaPhuong" ng-options="x.ten for x in xaphuong|filter:{id:huyen.id}" ng-click="" disabled ng-change="selectPhuongXa()">
+         <option value="">--- Xã/Phường ---</option>
+      </select>
+      <!-- End of -->
+   </div>
+   <script src="vendors/jquery/js/jquery.min.js"></script>
+   <script src="vendors/popper.js/js/popper.min.js"></script>
+   <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+   <script src="vendors/pace-progress/js/pace.min.js"></script>
+   <script src="vendors/perfect-scrollbar/js/perfect-scrollbar.min.js"></script>
+   <script src="vendors/@coreui/coreui/js/coreui.min.js"></script>
+   <script src="js/schoolity_truong.js"></script>
+</body>
+</html>

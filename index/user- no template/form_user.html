@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- base mục đích dòng này để chỉ định thư mục mặc định mình đang muốn link css hoặc js  -->
+	<base href="../../">
+	<title>user</title>
+	<meta charset=utf-8>
+	<link rel="stylesheet" type="text/css" href="./css/form_user.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	 crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+	 crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+	 crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./css/separate/elements/steps.css">
+	<link rel="stylesheet" href="./css/separate/tables/table.css">
+	<link rel="stylesheet" href="./css/separate/elements/search.css">
+	<link rel="stylesheet" href="./css/separate/elements/checkbox.css">
+	<link href="./css/separate/elements/button.css" rel="stylesheet">
+	<link rel="stylesheet" href="./css/separate/form/form.css">
+	<link rel="stylesheet" href="./css/separate/alert/alert.css">
+	<link rel="stylesheet" href="./css/material-design.css">
+	<link rel="stylesheet" href="./css/separate/pagination/pagination.css">
+</head>
+
+<body>
+	<!-- alert -->
+	<div>
+		<div id="alert-thanhcong" class="alert alert-info alert-info-border alert-dismissible" role="alert">
+			<i class="fa fa-check-circle alert-icon" aria-hidden="true"></i>
+			<div class="alert-content">Thao tác thành công!</div>
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+		<div id="alert-dienthongtin" class="alert alert-warning alert-warning-border alert-dismissible" role="alert">
+			<i class="fa fa-exclamation-triangle alert-icon" aria-hidden="true"></i>
+			<div class="alert-content">Bạn cần điền đầy đủ thông tin!</div>
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+	</div>
+	<!-- xac nhan xoa : confirm dialog -->
+	<div class="modal fade" id="confirmModal" role="dialog" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<b>Bạn có chắc chắn muốn xóa?</b>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Hủy</button>
+					<button type="button" class="btn btn-danger" data-dismiss="modal" onclick="showAlerthanhcong()">Xóa</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--main-content-->
+	<div class="container border-secondary p-2">
+		<div class="container-fluid  bg-white border box-shadow p-3">
+			<!-- THÊM,IMPORT,XÓA, DOWLOAD,PRINT -->
+			<div class="tab-content" id="myTabContent">
+				<div class="tab-pane fade show active" id="GVCN" role="tabpanel" aria-labelledby="GVCN-tab">
+					<div class="pt-3 pb-3 d-flex justify-content-between">
+						<div>
+							<button type="button" class="btn btn-success" data-toggle="modal" href="#" data-target="#addNewModal">
+								<i class="fa fa-plus" aria-hidden="true"></i> Thêm
+							</button>
+							<button type="button" class="btn btn-warning text-white" data-toggle="modal" href="#">
+								<i class="fa fa-upload" aria-hidden="true"></i> Import
+							</button>
+							<button type="button" id="buttonDelete" disabled class="btn btn-danger" data-toggle="modal" href="#" data-target="#confirmModal">
+								<i class="fa fa-trash-o" aria-hidden="true"></i> Xóa 
+							</button>
+						</div>
+						<div>
+							<!-- <button type="button" class="btn btn-info">
+										<i class="fa fa-clone" aria-hidden="true"></i> Copy
+									</button> -->
+							<button type="button" class="btn btn-info">
+								<i class="fa fa-download" aria-hidden="true"></i> Download
+							</button>
+							<button type="button" class="btn btn-info">
+								<i class="fa fa-print" aria-hidden="true"></i> Print
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- filter -->
+			<div class="d-flex justify-content-between">
+				<div class="flex-fill">
+					<select class="pr-3 pl-3 pt-1 pb-1 border">
+						<option value="true">10 dòng</option>
+						<option value="true">20 dòng</option>
+						<option value="true">50 dòng</option>
+					</select>
+					<select class="pr-3 pl-3 pt-1 pb-1 border">
+						<option value="true">Lớp 10A1</option>
+						<option value="true">Lớp 10A2</option>
+						<option value="true">Lớp 10A3</option>
+					</select>
+				</div>
+				<!-- thanh search -->
+				<div class="flex-fill search-wrapper" id="search-control">
+					<div class="input-search ">
+						<input type="text" class="input-search-text" placeholder="Tìm nhanh">
+						<div class="button-show-addvance">
+							<a id="showAdvanceSearch">
+								<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+							</a>
+						</div>
+					</div>
+					<div class="search-addvance box-shadow" id="formAdvanceSearch">
+						<form>
+							<div class="form-group row">
+								<label for="staticEmail" class="col-sm-3 col-form-label">Trường</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" id="inputTruong">
+								</div>
+							</div>
+							<div class="form-group row">
+								<label for="inputPassword" class="col-sm-3 col-form-label">Lớp</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" id="inputLop">
+								</div>
+							</div>
+							<div class="form-group row">
+								<label for="inputPassword" class="col-sm-3 col-form-label">Tên</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" id="inputTen">
+								</div>
+							</div>
+							<div class="form-group row">
+								<label for="inputPassword" class="col-sm-3 col-form-label">Mã số HS</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" id="inputMasoHS">
+								</div>
+							</div>
+							<div class="form-group row">
+								<label for="inputPassword" class="col-sm-3 col-form-label">Ngày sinh</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" id="inputNgáyinh">
+								</div>
+							</div>
+						</form>
+						<div class="d-flex">
+							<div class="mr-auto">
+							</div>
+							<div>
+								<button type="button" class="btn btn-outline-secondary">Cancel</button>
+								<button type="button" class="btn btn-primary">Tìm kiếm</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- table -->
+			<div class="table-fixed-header-wrapper">
+				<div class="table-container">
+					<table class="table-fixed-header table-hover">
+						<colgroup>
+							<col width="5%">
+							<col width="5%">
+							<col width="15%">
+							<col width="20%">
+							<col width="15%">
+							<col width="15%">
+							<col width="20%">
+							<col width="5%">
+						</colgroup>
+						<thead class="table-primary">
+							<tr>
+								<th>
+									<div class="cell">
+										<input type="checkbox" name="" id="checkAll" class="checkbox checkbox--red">
+									</div>
+								</th>
+								<th>
+									<div>STT</div>
+								</th>
+								<th>
+									<div>Mã Số HS</div>
+								</th>
+								<th>
+									<div>Tên HS</div>
+								</th>
+								<th>
+									<div>SĐT</div>
+								</th>
+								<th>
+									<div>Địa chỉ</div>
+								</th>
+								<th>
+									<div>Email</div>
+								</th>
+								<th>Hoạt Động<div>Hoạt Động</div>
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="table-light">
+								<td>
+									<div class="cell">
+										<input type="checkbox" name="" id="" class="checkbox checkbox--red">
+									</div>
+								</td>
+								<td>1</td>
+								<td>DTC1072</td>
+								<td>Nguyen Van A</td>
+								<td>0977 123 456</td>
+								<td>Quan 1</td>
+								<td>abc@gmail.com</td>
+								<td class="middle p-1">
+									<div class="d-flex justify-content-around">
+										<div data-toggle="tooltip" data-placement="top" title="Chỉnh Sửa">
+											<a data-toggle="modal" data-target="#editModal">
+												<i class="fa fa-pencil action-edit"></i>
+											</a>
+										</div>
+										<div data-toggle="tooltip" data-placement="top" title="Xem">
+											<a data-toggle="modal" data-target="#viewModal">
+												<i class="fa fa-eye action-view"></i>
+											</a>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr class="table-secondary">
+								<td>
+									<div class="cell">
+										<input type="checkbox" name="" id="" class="checkbox checkbox--red">
+									</div>
+								</td>
+								<td>1</td>
+								<td>DTC1072</td>
+								<td>Nguyen Van A</td>
+								<td>0977 123 456</td>
+								<td>Quan 1</td>
+								<td>abc@gmail.com</td>
+								<td class="middle p-1">
+									<div class="d-flex justify-content-around">
+										<div data-toggle="tooltip" data-placement="top" title="Chỉnh Sửa">
+											<a data-toggle="modal" data-target="#editModal">
+												<i class="fa fa-pencil action-edit"></i>
+											</a>
+										</div>
+										<div data-toggle="tooltip" data-placement="top" title="Xem">
+											<a data-toggle="modal" data-target="#viewModal">
+												<i class="fa fa-eye action-view"></i>
+											</a>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr class="table-light">
+								<td>
+									<div class="cell">
+										<input type="checkbox" name="" id="" class="checkbox checkbox--red">
+									</div>
+								</td>
+								<td>1</td>
+								<td>DTC1072</td>
+								<td>Nguyen Van A</td>
+								<td>0977 123 456</td>
+								<td>Quan 1</td>
+								<td>abc@gmail.com</td>
+								<td class="middle p-1">
+									<div class="d-flex justify-content-around">
+										<div data-toggle="tooltip" data-placement="top" title="Chỉnh Sửa">
+											<a data-toggle="modal" data-target="#editModal">
+												<i class="fa fa-pencil action-edit"></i>
+											</a>
+										</div>
+										<div data-toggle="tooltip" data-placement="top" title="Xem">
+											<a data-toggle="modal" data-target="#viewModal">
+												<i class="fa fa-eye action-view"></i>
+											</a>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr class="table-secondary">
+								<td>
+									<div class="cell">
+										<input type="checkbox" name="" id="" class="checkbox checkbox--red">
+									</div>
+								</td>
+								<td>1</td>
+								<td>DTC1072</td>
+								<td>Nguyen Van A</td>
+								<td>0977 123 456</td>
+								<td>Quan 1</td>
+								<td>abc@gmail.com</td>
+								<td class="middle p-1">
+									<div class="d-flex justify-content-around">
+										<div data-toggle="tooltip" data-placement="top" title="Chỉnh Sửa">
+											<a data-toggle="modal" data-target="#editModal">
+												<i class="fa fa-pencil action-edit"></i>
+											</a>
+										</div>
+										<div data-toggle="tooltip" data-placement="top" title="Xem">
+											<a data-toggle="modal" data-target="#viewModal">
+												<i class="fa fa-eye action-view"></i>
+											</a>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr class="table-light">
+								<td>
+									<div class="cell">
+										<input type="checkbox" name="" id="" class="checkbox checkbox--red">
+									</div>
+								</td>
+								<td>1</td>
+								<td>DTC1072</td>
+								<td>Nguyen Van A</td>
+								<td>0977 123 456</td>
+								<td>Quan 1</td>
+								<td>abc@gmail.com</td>
+								<td class="middle p-1">
+									<div class="d-flex justify-content-around">
+										<div data-toggle="tooltip" data-placement="top" title="Chỉnh Sửa">
+											<a data-toggle="modal" data-target="#editModal">
+												<i class="fa fa-pencil action-edit"></i>
+											</a>
+										</div>
+										<div data-toggle="tooltip" data-placement="top" title="Xem">
+											<a data-toggle="modal" data-target="#viewModal">
+												<i class="fa fa-eye action-view"></i>
+											</a>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr class="table-secondary">
+								<td>
+									<div class="cell">
+										<input type="checkbox" name="" id="" class="checkbox checkbox--red">
+									</div>
+								</td>
+								<td>1</td>
+								<td>DTC1072</td>
+								<td>Nguyen Van A</td>
+								<td>0977 123 456</td>
+								<td>Quan 1</td>
+								<td>abc@gmail.com</td>
+								<td class="middle p-1">
+									<div class="d-flex justify-content-around">
+										<div data-toggle="tooltip" data-placement="top" title="Chỉnh Sửa">
+											<a data-toggle="modal" data-target="#editModal">
+												<i class="fa fa-pencil action-edit"></i>
+											</a>
+										</div>
+										<div data-toggle="tooltip" data-placement="top" title="Xem">
+											<a data-toggle="modal" data-target="#viewModal">
+												<i class="fa fa-eye action-view"></i>
+											</a>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr class="table-light">
+								<td>
+									<div class="cell">
+										<input type="checkbox" name="" id="" class="checkbox checkbox--red">
+									</div>
+								</td>
+								<td>1</td>
+								<td>DTC1072</td>
+								<td>Nguyen Van A</td>
+								<td>0977 123 456</td>
+								<td>Quan 1</td>
+								<td>abc@gmail.com</td>
+								<td class="middle p-1">
+									<div class="d-flex justify-content-around">
+										<div data-toggle="tooltip" data-placement="top" title="Chỉnh Sửa">
+											<a data-toggle="modal" data-target="#editModal">
+												<i class="fa fa-pencil action-edit"></i>
+											</a>
+										</div>
+										<div data-toggle="tooltip" data-placement="top" title="Xem">
+											<a data-toggle="modal" data-target="#viewModal">
+												<i class="fa fa-eye action-view"></i>
+											</a>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr class="table-secondary">
+								<td>
+									<div class="cell">
+										<input type="checkbox" name="" id="" class="checkbox checkbox--red">
+									</div>
+								</td>
+								<td>1</td>
+								<td>DTC1072</td>
+								<td>Nguyen Van A</td>
+								<td>0977 123 456</td>
+								<td>Quan 1</td>
+								<td>abc@gmail.com</td>
+								<td class="middle p-1">
+									<div class="d-flex justify-content-around">
+										<div data-toggle="tooltip" data-placement="top" title="Chỉnh Sửa">
+											<a data-toggle="modal" data-target="#editModal">
+												<i class="fa fa-pencil action-edit"></i>
+											</a>
+										</div>
+										<div data-toggle="tooltip" data-placement="top" title="Xem">
+											<a data-toggle="modal" data-target="#viewModal">
+												<i class="fa fa-eye action-view"></i>
+											</a>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr class="table-light">
+								<td>
+									<div class="cell">
+										<input type="checkbox" name="" id="" class="checkbox checkbox--red">
+									</div>
+								</td>
+								<td>1</td>
+								<td>DTC1072</td>
+								<td>Nguyen Van A</td>
+								<td>0977 123 456</td>
+								<td>Quan 1</td>
+								<td>abc@gmail.com</td>
+								<td class="middle p-1">
+									<div class="d-flex justify-content-around">
+										<div data-toggle="tooltip" data-placement="top" title="Chỉnh Sửa">
+											<a data-toggle="modal" data-target="#editModal">
+												<i class="fa fa-pencil action-edit"></i>
+											</a>
+										</div>
+										<div data-toggle="tooltip" data-placement="top" title="Xem">
+											<a data-toggle="modal" data-target="#viewModal">
+												<i class="fa fa-eye action-view"></i>
+											</a>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr class="table-secondary">
+								<td>
+									<div class="cell">
+										<input type="checkbox" name="" id="" class="checkbox checkbox--red">
+									</div>
+								</td>
+								<td>1</td>
+								<td>DTC1072</td>
+								<td>Nguyen Van A</td>
+								<td>0977 123 456</td>
+								<td>Quan 1</td>
+								<td>abc@gmail.com</td>
+								<td class="middle p-1">
+									<div class="d-flex justify-content-around">
+										<div data-toggle="tooltip" data-placement="top" title="Chỉnh Sửa">
+											<a data-toggle="modal" data-target="#editModal">
+												<i class="fa fa-pencil action-edit"></i>
+											</a>
+										</div>
+										<div data-toggle="tooltip" data-placement="top" title="Xem">
+											<a data-toggle="modal" data-target="#viewModal">
+												<i class="fa fa-eye action-view"></i>
+											</a>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr class="table-light">
+								<td>
+									<div class="cell">
+										<input type="checkbox" name="" id="" class="checkbox checkbox--red">
+									</div>
+								</td>
+								<td>1</td>
+								<td>DTC1072</td>
+								<td>Nguyen Van A</td>
+								<td>0977 123 456</td>
+								<td>Quan 1</td>
+								<td>abc@gmail.com</td>
+								<td class="middle p-1">
+									<div class="d-flex justify-content-around">
+										<div data-toggle="tooltip" data-placement="top" title="Chỉnh Sửa">
+											<a data-toggle="modal" data-target="#editModal">
+												<i class="fa fa-pencil action-edit"></i>
+											</a>
+										</div>
+										<div data-toggle="tooltip" data-placement="top" title="Xem">
+											<a data-toggle="modal" data-target="#viewModal">
+												<i class="fa fa-eye action-view"></i>
+											</a>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- phân trang -->
+			<div class="mt-3 d-flex justify-content-between">
+				<div>
+					<p>Hiển thị 1 đến 10 dòng trong tổng số 57 dòng</p>
+				</div>
+				<nav aria-label="Page navigation example">
+					<ul class="pagination">
+						<li class="page-item">
+							<a class="page-link" href="#" aria-label="Previous">
+								<span aria-hidden="true">&laquo;</span>
+								<span class="sr-only">Previous</span>
+							</a>
+						</li>
+						<li class="page-item active"><a class="page-link" href="#">1</a></li>
+						<li class="page-item"><a class="page-link" href="#">2</a></li>
+						<li class="page-item"><a class="page-link" href="#">...</a></li>
+						<li class="page-item"><a class="page-link" href="#">100</a></li>
+						<li class="page-item">
+							<a class="page-link" href="#" aria-label="Next">
+								<span aria-hidden="true">&raquo;</span>
+								<span class="sr-only">Next</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<!-- add new  -->
+	<div class="modal fade bd-example-modal-lg" id="addNewModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+	 aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<form class="needs-validation" novalidate>
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title"><b>Thêm</b></h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form class="needs-validation" novalidate>
+							<div class="card-header">
+								<div class="steps-icon-progress">
+									<ul>
+										<li class="active">
+											<div class="icon">
+												<a data-toggle="collapse" data-target="#collapseThongTin1" aria-expanded="false" aria-controls="collapseThongTin1">1</a>
+											</div>
+											<div class="caption">Thông Tin 1</div>
+										</li>
+										<li class="active">
+											<div class="icon">
+												<a data-toggle="collapse" data-target="#collapseThongTin2" aria-expanded="false" aria-controls="collapseThongTin2">2</a>
+											</div>
+											<div class="caption">Thông Tin 2</div>
+										</li>
+										<li>
+											<div class="icon">
+												<a data-toggle="collapse" data-target="#collapseThongTin3" aria-expanded="false" aria-controls="collapseThongTin3">3</a>
+											</div>
+											<div class="caption">Thông Tin 3</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div id="formThongTin" class="card-body">
+								<div id="collapseThongTin1" class="collapse show" data-parent="#formThongTin" aria-labelledby="headingOne">
+									<!-- đây là form thông tin 1-->
+									<div>
+										<div class="d-flex justify-content-start plr-100 mb-3">
+											<div class="p-2">
+												<i class="fa fa-id-card-o fa-lg" aria-hidden="true"></i>
+											</div>
+											<div class="w-100">
+												<input type="text" class="form-control" id="inputTen" placeholder="Nhập mã số HS" value="" required>
+												<div class="invalid-feedback">xin vui lòng nhập thông tin</div>
+											</div>
+										</div>
+										<div class="d-flex justify-content-start plr-100 mb-3">
+											<div class="p-2">
+												<i class="fa fa-user fa-lg" aria-hidden="true"></i>
+											</div>
+											<div class="w-100 pl-2">
+												<input type="text" class="form-control" id="inputTen" placeholder="Nhập Tên" value="" required>
+												<div class="invalid-feedback">xin vui lòng nhập thông tin</div>
+											</div>
+										</div>
+										<div class="d-flex justify-content-start plr-100 mb-3">
+											<div class="p-2">
+												<i class="fa fa-location-arrow fa-lg" aria-hidden="true"></i>
+											</div>
+											<div class="w-100 pl-2">
+												<input type="text" class="form-control" id="inputTen" placeholder="Nhập Địa Chỉ" value="" required>
+												<div class="invalid-feedback">xin vui lòng nhập thông tin</div>
+											</div>
+										</div>
+										<div class="d-flex justify-content-start plr-100 mb-3">
+											<div class="p-2">
+												<i class="fa fa fa-phone fa-lg" aria-hidden="true"></i>
+											</div>
+											<div class="w-100 pl-2">
+												<input type="text" class="form-control" id="inputTen" placeholder="Nhập Số Điện Thoại" value="" required>
+												<div class="invalid-feedback">xin vui lòng nhập thông tin</div>
+											</div>
+										</div>
+										<div class="d-flex justify-content-start plr-100 mb-3">
+											<div class="p-2">
+												<i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
+											</div>
+											<div class="w-100 pl-2">
+												<input type="text" class="form-control" id="inputTen" placeholder="Nhập Email" value="" required>
+												<div class="invalid-feedback">xin vui lòng nhập thông tin</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="collapseThongTin2" class="collapse " data-parent="#formThongTin" aria-labelledby="headingOne">
+									<!-- 	form thong tin 2 -->
+									<div class="form-row">
+										<div class="col-md-6 mb-3">
+											<!-- <label for="inputTen">Ten</label> -->
+											<div class="form-row">
+												<div class="row-icon">
+													<i class="fa fa-user fa-lg"></i>
+												</div>
+												<div class="row-control">
+													<input type="text" class="form-control" id="inputTen" placeholder="Ten" value="" required>
+													<div class="invalid-feedback">xin vui lòng nhập thông tin</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 mb-3">
+											<!-- <label for="inputSDT">SDT</label> -->
+											<div class="form-row">
+												<div class="row-icon">
+													<i class="fa fa-phone fa-lg" aria-hidden="true"></i>
+												</div>
+												<div class="row-control">
+													<input type="text" class="form-control" id="inputSDT" placeholder="SDT" value="" required>
+													<div class="invalid-feedback">xin vui lòng nhập thông tin</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="form-row">
+										<div class="col-md-6 mb-3">
+											<!-- <label for="inputDiaChi">Dia Chi</label> -->
+											<div class="form-row">
+												<div class="row-icon">
+													<i class="fa fa-location-arrow fa-lg" aria-hidden="true"></i>
+												</div>
+												<div class="row-control">
+													<input type="text" class="form-control" id="inputDiaChi" placeholder="Dia Chi" value="" required>
+													<div class="invalid-feedback">xin vui lòng nhập thông tin</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 mb-3">
+											<!-- <label for="inputEmail">Email</label> -->
+											<div class="form-row">
+												<div class="row-icon">
+													<i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
+												</div>
+												<div class="row-control">
+													<input type="text" class="form-control" id="inputEmail" placeholder="Email" value="" required>
+													<div class="invalid-feedback">xin vui lòng nhập thông tin</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="form-row">
+										<div class="col-md-6 mb-3">
+											<!-- <label for="inputTen">Ten</label> -->
+											<div class="form-row">
+												<div class="row-icon">
+													<i class="fa fa-user fa-lg"></i>
+												</div>
+												<div class="row-control">
+													<input type="text" class="form-control" id="inputTen" placeholder="Ten" value="" required>
+													<div class="invalid-feedback">xin vui lòng nhập thông tin</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 mb-3">
+											<!-- <label for="inputSDT">SDT</label> -->
+											<div class="form-row">
+												<div class="row-icon">
+													<i class="fa fa-phone fa-lg" aria-hidden="true"></i>
+												</div>
+												<div class="row-control">
+													<input type="text" class="form-control" id="inputSDT" placeholder="SDT" value="" required>
+													<div class="invalid-feedback">xin vui lòng nhập thông tin</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="form-row">
+										<div class="col-md-6 mb-3">
+											<!-- <label for="inputDiaChi">Dia Chi</label> -->
+											<div class="form-row">
+												<div class="row-icon">
+													<i class="fa fa-location-arrow fa-lg" aria-hidden="true"></i>
+												</div>
+												<div class="row-control">
+													<input type="text" class="form-control" id="inputDiaChi" placeholder="Dia Chi" value="" required>
+													<div class="invalid-feedback">xin vui lòng nhập thông tin</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 mb-3">
+											<!-- <label for="inputEmail">Email</label> -->
+											<div class="form-row">
+												<div class="row-icon">
+													<i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
+												</div>
+												<div class="row-control">
+													<input type="text" class="form-control" id="inputEmail" placeholder="Email" value="" required>
+													<div class="invalid-feedback">xin vui lòng nhập thông tin</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="collapseThongTin3" class="collapse" data-parent="#formThongTin" aria-labelledby="headingOne">
+									form thong tin 3
+								</div>
+							</div>
+					</div>
+					<div class="modal-footer  justify-content-between">
+						<div>
+							<div class="d-flex text-danger">
+								<i class="fa fa-exclamation-triangle alert-icon" aria-hidden="true"></i>
+								<div class="alert-content">Cảnh báo lỗi từ hệ thống.</div>
+							</div>
+						</div>
+						<div>
+							<button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
+							<button type="submit" class="btn btn-primary">Save</button>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!--chinh sua modal-->
+	<div class="modal fade bd-example-modal-lg" id="editModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+	 aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<form class="needs-validation" novalidate>
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title"><b>Chỉnh Sữa</b></h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form class="needs-validation" novalidate>
+							<div class="card-header">
+								<div class="steps-icon-progress">
+									<ul>
+										<li class="active">
+											<div class="icon">
+												<a data-toggle="collapse" data-target="#collapseThongTin1" aria-expanded="false" aria-controls="collapseThongTin1">1</a>
+											</div>
+											<div class="caption">Thông Tin 1</div>
+										</li>
+										<li class="active">
+											<div class="icon">
+												<a data-toggle="collapse" data-target="#collapseThongTin2" aria-expanded="false" aria-controls="collapseThongTin2">2</a>
+											</div>
+											<div class="caption">Thông Tin 2</div>
+										</li>
+										<li>
+											<div class="icon">
+												<a data-toggle="collapse" data-target="#collapseThongTin3" aria-expanded="false" aria-controls="collapseThongTin3">3</a>
+											</div>
+											<div class="caption">Thông Tin 3</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div id="formThongTin" class="card-body">
+								<div id="collapseThongTin1" class="collapse show" data-parent="#formThongTin" aria-labelledby="headingOne">
+									<!-- đây là form thông tin 1-->
+									<div>
+										<div class="d-flex justify-content-start plr-100 mb-3">
+											<div class="p-2">
+												<i class="fa fa-id-card-o fa-lg" aria-hidden="true"></i>
+											</div>
+											<div class="w-100">
+												<input type="text" class="form-control" id="inputTen" placeholder="Nhập mã số HS" value="" required>
+												<div class="invalid-feedback">xin vui lòng nhập thông tin</div>
+											</div>
+										</div>
+										<div class="d-flex justify-content-start plr-100 mb-3">
+											<div class="p-2">
+												<i class="fa fa-user fa-lg" aria-hidden="true"></i>
+											</div>
+											<div class="w-100 pl-2">
+												<input type="text" class="form-control" id="inputTen" placeholder="Nhập Tên" value="" required>
+												<div class="invalid-feedback">xin vui lòng nhập thông tin</div>
+											</div>
+										</div>
+										<div class="d-flex justify-content-start plr-100 mb-3">
+											<div class="p-2">
+												<i class="fa fa-location-arrow fa-lg" aria-hidden="true"></i>
+											</div>
+											<div class="w-100 pl-2">
+												<input type="text" class="form-control" id="inputTen" placeholder="Nhập Địa Chỉ" value="" required>
+												<div class="invalid-feedback">xin vui lòng nhập thông tin</div>
+											</div>
+										</div>
+										<div class="d-flex justify-content-start plr-100 mb-3">
+											<div class="p-2">
+												<i class="fa fa fa-phone fa-lg" aria-hidden="true"></i>
+											</div>
+											<div class="w-100 pl-2">
+												<input type="text" class="form-control" id="inputTen" placeholder="Nhập Số Điện Thoại" value="" required>
+												<div class="invalid-feedback">xin vui lòng nhập thông tin</div>
+											</div>
+										</div>
+										<div class="d-flex justify-content-start plr-100 mb-3">
+											<div class="p-2">
+												<i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
+											</div>
+											<div class="w-100 pl-2">
+												<input type="text" class="form-control" id="inputTen" placeholder="Nhập Email" value="" required>
+												<div class="invalid-feedback">xin vui lòng nhập thông tin</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="collapseThongTin2" class="collapse " data-parent="#formThongTin" aria-labelledby="headingOne">
+									<!-- 	form thong tin 2 -->
+									<div class="form-row">
+										<div class="col-md-6 mb-3">
+											<!-- <label for="inputTen">Ten</label> -->
+											<div class="form-row">
+												<div class="row-icon">
+													<i class="fa fa-user fa-lg"></i>
+												</div>
+												<div class="row-control">
+													<input type="text" class="form-control" id="inputTen" placeholder="Ten" value="" required>
+													<div class="invalid-feedback">xin vui lòng nhập thông tin</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 mb-3">
+											<!-- <label for="inputSDT">SDT</label> -->
+											<div class="form-row">
+												<div class="row-icon">
+													<i class="fa fa-phone fa-lg" aria-hidden="true"></i>
+												</div>
+												<div class="row-control">
+													<input type="text" class="form-control" id="inputSDT" placeholder="SDT" value="" required>
+													<div class="invalid-feedback">xin vui lòng nhập thông tin</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="form-row">
+										<div class="col-md-6 mb-3">
+											<!-- <label for="inputDiaChi">Dia Chi</label> -->
+											<div class="form-row">
+												<div class="row-icon">
+													<i class="fa fa-location-arrow fa-lg" aria-hidden="true"></i>
+												</div>
+												<div class="row-control">
+													<input type="text" class="form-control" id="inputDiaChi" placeholder="Dia Chi" value="" required>
+													<div class="invalid-feedback">xin vui lòng nhập thông tin</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 mb-3">
+											<!-- <label for="inputEmail">Email</label> -->
+											<div class="form-row">
+												<div class="row-icon">
+													<i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
+												</div>
+												<div class="row-control">
+													<input type="text" class="form-control" id="inputEmail" placeholder="Email" value="" required>
+													<div class="invalid-feedback">xin vui lòng nhập thông tin</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="form-row">
+										<div class="col-md-6 mb-3">
+											<!-- <label for="inputTen">Ten</label> -->
+											<div class="form-row">
+												<div class="row-icon">
+													<i class="fa fa-user fa-lg"></i>
+												</div>
+												<div class="row-control">
+													<input type="text" class="form-control" id="inputTen" placeholder="Ten" value="" required>
+													<div class="invalid-feedback">xin vui lòng nhập thông tin</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 mb-3">
+											<!-- <label for="inputSDT">SDT</label> -->
+											<div class="form-row">
+												<div class="row-icon">
+													<i class="fa fa-phone fa-lg" aria-hidden="true"></i>
+												</div>
+												<div class="row-control">
+													<input type="text" class="form-control" id="inputSDT" placeholder="SDT" value="" required>
+													<div class="invalid-feedback">xin vui lòng nhập thông tin</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="form-row">
+										<div class="col-md-6 mb-3">
+											<!-- <label for="inputDiaChi">Dia Chi</label> -->
+											<div class="form-row">
+												<div class="row-icon">
+													<i class="fa fa-location-arrow fa-lg" aria-hidden="true"></i>
+												</div>
+												<div class="row-control">
+													<input type="text" class="form-control" id="inputDiaChi" placeholder="Dia Chi" value="" required>
+													<div class="invalid-feedback">xin vui lòng nhập thông tin</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 mb-3">
+											<!-- <label for="inputEmail">Email</label> -->
+											<div class="form-row">
+												<div class="row-icon">
+													<i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
+												</div>
+												<div class="row-control">
+													<input type="text" class="form-control" id="inputEmail" placeholder="Email" value="" required>
+													<div class="invalid-feedback">xin vui lòng nhập thông tin</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="collapseThongTin3" class="collapse" data-parent="#formThongTin" aria-labelledby="headingOne">
+									form thong tin 3
+								</div>
+							</div>
+					</div>
+					<div class="modal-footer  justify-content-between">
+						<div>
+							<div class="d-flex text-danger">
+								<i class="fa fa-exclamation-triangle alert-icon" aria-hidden="true"></i>
+								<div class="alert-content">Cảnh báo lỗi từ hệ thống.</div>
+							</div>
+						</div>
+						<div>
+							<button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
+							<button type="submit" class="btn btn-primary">Save</button>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- Modal view -->
+	<div class="modal fade" id="viewModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Xem Thông Tin Cá Nhân</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-6">
+							<div>
+								<img src="./imgs/2.jpg" alt="3" class="img-thumbnail">
+							</div>
+						</div>
+						<div class="col-6 border-dark">
+							<form>
+								<div class="d-flex border-bottom mb-3">
+									<div class="p-1">
+										<i class="fa fa-user"></i>
+									</div>
+									<div class="p-1">
+										Trần Thị Bích Ngọc
+									</div>
+								</div>
+								<div class="d-flex border-bottom mb-3">
+									<div class="p-1">
+										<i class="fa fa-phone"></i>
+									</div>
+									<div class="p-1">
+										0977889061
+									</div>
+								</div>
+								<div class="d-flex border-bottom mb-3">
+									<div class="p-1">
+										<i class="fa fa-birthday-cake"></i>
+									</div>
+									<div class="p-1">
+										09/10/1994
+									</div>
+								</div>
+								<div class="d-flex border-bottom mb-3">
+									<div class="p-1">
+										<i class="fa fa-envelope-o"></i>
+									</div>
+									<div class="p-1">
+										ngocbmt94@gmail.com
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<div>
+						<button type="submit" class="btn btn-primary">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		// day la script de giup hien thi alert
+		// script nay se bi xoa khi dua cho FE team
+		// mac dinh ban dau la tat ca alert se an di
+		$(".alert").hide()
+		// day la ham chung de goi
+		function showAlert(selector) {
+			// them class show cho alert
+			$(selector).addClass('show') //Shows Bootstrap alert
+			$(selector).show() //Shows Bootstrap alert
+			setTimeout(function () {
+				$(selector).removeClass('show')
+				$(selector).hide()
+			}, 1000);
+		}
+		// ham de hien thi alert danger
+		function showAlerthanhcong() {
+			// goi ham chung de show alert: ID = alert-danger
+			showAlert('#alert-thanhcong')
+		}
+
+		function showAlertdienthongtin() {
+			showAlert('#alert-dienthongtin')
+		}
+
+		(function () {
+			'use strict';
+			window.addEventListener('load', function () {
+				// Fetch all the forms we want to apply custom Bootstrap validation styles to
+				var forms = document.getElementsByClassName('needs-validation');
+				// Loop over them and prevent submission
+				var validation = Array.prototype.filter.call(forms, function (form) {
+					form.addEventListener('submit', function (event) {
+						if (form.checkValidity() === false) {
+							event.preventDefault();
+							event.stopPropagation();
+							showAlertdienthongtin()
+						}
+						form.classList.add('was-validated');
+					}, false);
+				});
+			}, false);
+		})();
+		visibleAdvanceSearch = false;
+		$(document).ready(function () {
+			// handle show advance search
+			$('#showAdvanceSearch').click(function () {
+				if (visibleAdvanceSearch == false) {
+					visibleAdvanceSearch = true;
+					$('#formAdvanceSearch').removeClass('fade-out');
+					$('#formAdvanceSearch').addClass('fade-in');
+					$('#showAdvanceSearch i').removeClass('fa-chevron-circle-down');
+					$('#showAdvanceSearch i').addClass('fa-chevron-circle-up');
+				} else {
+					visibleAdvanceSearch = false;
+					$('#formAdvanceSearch').removeClass('fade-in');
+					$('#formAdvanceSearch').addClass('fade-out');
+					$('#showAdvanceSearch i').removeClass('fa-chevron-circle-up');
+					$('#showAdvanceSearch i').addClass('fa-chevron-circle-down');
+				}
+			})
+			// handle check all
+			// https://stackoverflow.com/questions/18537609/jquery-checkbox-check-all
+			$("#checkAll").click(function () {
+				$('input:checkbox').not(this).prop('checked', this.checked);
+			});
+
+			
+			$('input:checkbox').change(function () {
+				// kiem tra xem co checkbox nao dc check k
+				var atLeastOneIsChecked = $('input:checkbox:checked').length > 0;
+				// neu khong co checkbox nao check => hide
+				// nguoc lai show button delete
+				if (atLeastOneIsChecked)
+					$("#buttonDelete").removeAttr("disabled");
+				else
+					$("#buttonDelete").attr("disabled", "");
+			})
+		});
+	</script>
+</body>
+
+</html>

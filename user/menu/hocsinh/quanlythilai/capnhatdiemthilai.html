@@ -1,0 +1,123 @@
+<div class=" border-secondary p-2">
+    <div class="bg-white border box-shadow p-3">
+        <!-- THÊM,IMPORT,XÓA, DOWLOAD,PRINT -->
+        <div class="pb-3 d-flex justify-content-between">
+
+            <div class="schollity-SearchPanel-Title">
+                <span class="icon-search-file"></span>
+                Thông tin tìm kiếm
+                <span id="btn-panel-collapse"></span>
+            </div>
+
+        </div>
+        <!-- filter -->
+        <div class="select-search">
+            <div class="row">
+                <!-- Select khối học sinh -->
+                <div class="col-md-6 col col-sm-6">
+                    <label for="khoi"> Khối</label>
+                    <select class="pr-3 pl-3 pt-1 pb-1 border">
+                        <option value="true">Khối 10</option>
+                        <option value="true">Khối 11</option>
+                        <option value="true">Khối 12</option>
+                    </select>
+                </div>
+                <!-- select row lop hoc  -->
+                <div class="col-md-6 col col-sm-6">
+                    <label for="lop"> Lớp </label>
+                    <select class="pr-3 pl-3 pt-1 pb-1 border">
+                        <option value="true">Lớp 10A1</option>
+                        <option value="true">Lớp 10A2</option>
+                        <option value="true">Lớp 10A3</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+
+        <div>
+            <div class="abc">
+                <label> Môn thi:</label>
+                <div ng-repeat="h in thilai" ng-if="!isHideInColumn(h.id)" class='select-mon'>
+                    <a class="btn btn-primary btn-bold"> {{h.mon}} </a>
+                </div>
+
+            </div>
+            <label style="color:red;margin-bottom: 50px;">Thầy/cô nhập 90-&gt; 9.0</label>
+        </div>
+
+    </div>
+</div>
+<!-- Tablen search học sinh -->
+<div class="table-fixed-header-wrapper">
+    <div class="table-container">
+        <table class="table-fixed-header table-hover table table-striped ">
+            <thead>
+                <tr>
+                    <div>
+
+                        <th ng-repeat="h in thilai" style='width:{{h.width}}'>
+                            <div ng-if="isHideInColumn(h.id)">
+                                <div class="header-trixxx">{{h.mon}}</div>
+                            </div>
+
+                            <div ng-if="!isHideInColumn(h.id)">
+                                <div style="color: #fff; display: inline-block; font-size: 12px">
+                                    {{h.mon}}
+                                    <span>
+                                        <input type="checkbox" name="" id="" class="checkbox checkbox--red"></div>
+                                </span>
+                            </div>
+                        </th>
+                    </div>
+                </tr>
+            </thead>
+
+
+            <tbody class="table-fixed-header-wrapper table-container">
+
+                <xxx>
+                    <tr ng-repeat="x in monthilai">
+                        <td>{{x.soThuTu}} </td>
+                        <td>{{x.hoten}} </td>
+                        <td>{{x.lop}}</td>
+                        <td> <input type="checkbox" name="" id="" class="checkbox checkbox--red">{{x.toan}}</td>
+                        <td><input type="checkbox" name="" id="" class="checkbox checkbox--red">{{x.ly}}</td>
+                        <td><input type="checkbox" name="" id="" class="checkbox checkbox--red">{{x.hoa}}</td>
+                        <td><input type="checkbox" name="" id="" class="checkbox checkbox--red">{{x.sinh}}</td>
+                        <td><input type="checkbox" name="" id="" class="checkbox checkbox--red">{{x.tin}}</td>
+                        <td><input type="checkbox" name="" id="" class="checkbox checkbox--red">{{x.van}}</td>
+                        <td><input type="checkbox" name="" id="" class="checkbox checkbox--red">{{x.su}}</td>
+                        <td><input type="checkbox" name="" id="" class="checkbox checkbox--red">{{x.dia}}</td>
+                        <td><input type="checkbox" name="" id="" class="checkbox checkbox--red">{{x.tienganh}}</td>
+                        <td><input type="checkbox" name="" id="" class="checkbox checkbox--red">{{x.GDCD}}</td>
+                        <td><input type="checkbox" name="" id="" class="checkbox checkbox--red">{{x.CN}}</td>
+                        <td><input type="checkbox" name="" id="" class="checkbox checkbox--red">{{x.TD}}</td>
+                        <td><input type="checkbox" name="" id="" class="checkbox checkbox--red">{{x.QPAN}}</td>
+                    </tr>
+                </xxx>
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <p style="color:red;margin-bottom: 50px;">
+        Lưu ý:
+        <br>
+        &nbsp;&nbsp;- Các môn học được phép chọn đăng ký thi lại là môn học có TBm cả năm &lt; 5.0
+        hoặc có kết quả xếp loại CĐ
+        <br>
+        &nbsp;&nbsp;- Các môn học có TBm hoặc kết quả xếp loại tô màu đỏ là các môn học bắt buộc
+        phải đăng ký thi lại để được lên lớp. (TBM &lt; 3.5, cả Văn và Toán &lt; 5.0 hoặc xếp loại
+        CĐ)
+        <br>
+        &nbsp;&nbsp;- Học sinh được phép đăng ký một hoặc nhiều môn để thi lại.
+        <br>
+        &nbsp;&nbsp;- Kết quả kiểm tra lại được lấy thay thế cho kết quả xếp loại cả năm học của
+        môn học đó để tính lại điểm trung bình các môn cả năm học và xếp loại lại về học lực; nếu
+        đạt loại trung bình thì được lên lớp.
+
+    </p>
+    <div class="Clear"></div>
+</div>

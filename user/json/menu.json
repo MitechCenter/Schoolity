@@ -1,0 +1,457 @@
+[{
+        "name": "Hệ thống",
+        "path": "user/#",
+        "id": "lv1_MenuObj_00",
+        "ic": "nav-icon icon-bell",
+        "sub": [{
+                "name": "Thông tin nhà trường",
+                "path": "user/#",
+                "id": "MenuObj_01",
+                "ic": ""
+            },
+            {
+                "name": "Khai báo dữ liệu",
+                "path": "user/#",
+                "id": "MenuObj_02",
+                "ic": ""
+            },
+            {
+                "name": "Import dữ liệu",
+                "path": "user/#",
+                "id": "lv2_MenuObj_03",
+                "ic": ""
+            },
+            {
+                "name": "Thời khóa biểu",
+                "path": "user/#",
+                "id": "lv2_MenuObj_04",
+                "ic": ""
+            },
+            {
+                "name": "Kết chuyển dữ liệu",
+                "path": "user/#",
+                "id": "lv2_MenuObj_05",
+                "ic": ""
+            },
+            {
+                "name": "Cấu hình hệ thống",
+                "path": "user/#",
+                "id": "lv2_MenuObj_06",
+                "ic": ""
+            },
+            {
+                "name": "Cấu hình mức thống kê",
+                "path": "user/#",
+                "id": "lv2_MenuObj_07",
+                "ic": ""
+            },
+            {
+                "name": "Giám sát nhập điểm",
+                "path": "user/#",
+                "id": "lv2_MenuObj_08",
+                "ic": ""
+            },
+            {
+                "name": "Lịch sử sử dụng",
+                "path": "user/#",
+                "id": "lv2_MenuObj_09",
+                "ic": ""
+            }
+        ]
+    },
+    {
+        "name": "Học sinh",
+        "path": "user/#",
+        "id": "lv1_MenuObj_10",
+        "ic": "",
+        "sub": [{
+                "name": "Hồ sơ học sinh",
+                "path": "user/#",
+                "id": "lv2_MenuObj_11",
+                "ic": ""
+            },
+            {
+                "name": "Sổ điểm",
+                "path": "user/#",
+                "id": "lv2_MenuObj_12",
+                "ic": ""
+            },
+            {
+                "name": "Điểm danh",
+                "path": "user/#",
+                "id": "lv2_MenuObj_13",
+                "ic": ""
+            },
+            {
+                "name": "Vi phạm",
+                "path": "user/#",
+                "id": "lv2_MenuObj_14",
+                "ic": ""
+            },
+            {
+                "name": "Tổng kết điểm",
+                "path": "user/#",
+                "id": "lv2_MenuObj_15",
+                "ic": "",
+                "sub": [{
+                    "name": "Tổng kết điểm",
+                    "path": "user/#",
+                    "id": "lv3_MenuObj_16",
+                    "ic": ""
+                }, {
+                    "name": "Tổng kết điểm, xếp loại theo khối",
+                    "path": "user/#",
+                    "id": "lv3_MenuObj_17",
+                    "ic": ""
+                }, {
+                    "name": "Điểm thi học kỳ",
+                    "path": "user/#",
+                    "id": "lv3_MenuObj_18",
+                    "ic": ""
+                }]
+            },
+            {
+                "name": "Xếp loại hạnh kiểm",
+                "path": "user/#",
+                "id": "lv2_MenuObj_19",
+                "ic": ""
+            },
+            {
+                "name": "Xếp loại học lực",
+                "path": "user/#",
+                "id": "lv2_MenuObj_20",
+                "ic": ""
+            },
+            {
+                "name": "QL Thông tin tốt nghiệp",
+                "path": "user/#",
+                "id": "lv2_MenuObj_21",
+                "ic": ""
+            },
+            {
+                "name": "Xếp loại thi đua",
+                "path": "user/#",
+                "id": "lv2_MenuObj_22",
+                "ic": ""
+            },
+            {
+                "name": "Quản lý thi lại",
+                "path": "user/#",
+                "id": "lv2_MenuObj_23",
+                "ic": "",
+                "sub": [{
+                    "name": "Đăng ký môn thi lại",
+                    "path": "user/#",
+                    "id": "lv3_MenuObj_24",
+                    "ic": ""
+                }, {
+                    "name": "Cập nhật điểm thi lại",
+                    "path": "user/#",
+                    "id": "lv3_MenuObj_25",
+                    "ic": ""
+                }, {
+                    "name": "Xử lý kết quả thi lại",
+                    "path": "user/#",
+                    "id": "lv3_MenuObj_26",
+                    "ic": ""
+                }]
+            }
+        ]
+    },
+    {
+        "name": "Cán bộ",
+        "path": "user/#",
+        "id": "lv1_MenuObj_27",
+        "ic": "",
+        "sub": [{
+                "name": "Hồ sơ cán bộ",
+                "path": "user/#",
+                "id": "lv2_MenuObj_28",
+                "ic": ""
+            },
+            {
+                "name": "Phân công giảng dạy",
+                "path": "user/#",
+                "id": "lv2_MenuObj_29",
+                "ic": ""
+            },
+            {
+                "name": "Phân công giáo vụ",
+                "path": "user/#",
+                "id": "lv2_MenuObj_30",
+                "ic": ""
+            },
+            {
+                "name": "Công việc kiểm nghiệm",
+                "path": "user/#",
+                "id": "lv2_MenuObj_31",
+                "ic": ""
+            },
+            {
+                "name": "Làm thay chủ nhiệm",
+                "path": "user/#",
+                "id": "lv2_MenuObj_32",
+                "ic": ""
+            },
+            {
+                "name": "Phân công chủ nhiệm",
+                "path": "user/#",
+                "id": "lv2_MenuObj_33",
+                "ic": ""
+            },
+            {
+                "name": "Khen thưởng - Kỷ luật",
+                "path": "user/#",
+                "id": "lv2_MenuObj_34",
+                "ic": ""
+            },
+            {
+                "name": "Sáng kiến kinh nghiệm",
+                "path": "user/#",
+                "id": "lv2_MenuObj_35",
+                "ic": ""
+            },
+            {
+                "name": "Đánh giá xếp loại",
+                "path": "user/#",
+                "id": "lv2_MenuObj_36",
+                "ic": ""
+            },
+            {
+                "name": "Danh hiệu thi đua",
+                "path": "user/#",
+                "id": "lv2_MenuObj_37",
+                "ic": ""
+            },
+            {
+                "name": "Danh hiệu thi đua tập thể",
+                "path": "user/#",
+                "id": "lv2_MenuObj_38",
+                "ic": ""
+            },
+            {
+                "name": "Lịch báo giảng",
+                "path": "user/#",
+                "id": "lv2_MenuObj_39",
+                "ic": "",
+                "sub": [{
+                    "name": "Cấu hình phân môn",
+                    "path": "user/#",
+                    "id": "lv3_MenuObj_40",
+                    "ic": ""
+                }, {
+                    "name": "Phân phối chươn trình",
+                    "path": "user/#",
+                    "id": "lv3_MenuObj_41",
+                    "ic": ""
+                }, {
+                    "name": "Lịch báo giảng",
+                    "path": "user/#",
+                    "id": "lv3_MenuObj_42",
+                    "ic": ""
+                }, {
+                    "name": "Quản lý lịch báo giảng",
+                    "path": "user/#",
+                    "id": "lv3_MenuObj_43",
+                    "ic": ""
+                }]
+            },
+            {
+                "name": "Quản lý sử dụng sổ điểm",
+                "path": "user/#",
+                "id": "lv2_MenuObj_44",
+                "ic": ""
+            }
+        ]
+    },
+    {
+        "name": "Thi cử",
+        "path": "user/#",
+        "id": "lv1_MenuObj_45",
+        "ic": "",
+        "sub": [{
+            "name": "Tổ chức thi",
+            "path": "user/#",
+            "id": "lv2_MenuObj_46",
+            "ic": ""
+        }]
+    },
+    {
+        "name": "Báo cáo",
+        "path": "user/#",
+        "id": "lv1_MenuObj_47",
+        "ic": "",
+        "sub": [{
+                "name": "Báo cáo hồ sơ học sinh",
+                "path": "user/#",
+                "id": "lv2_MenuObj_48",
+                "ic": ""
+            },
+            {
+                "name": "Báo cáo kết quả học tập",
+                "path": "user/#",
+                "id": "lv2_MenuObj_49",
+                "ic": ""
+            },
+            {
+                "name": "TK điểm môn học",
+                "path": "user/#",
+                "id": "lv2_MenuObj_50",
+                "ic": ""
+            },
+            {
+                "name": "TK HL - HK - Rèn luyện",
+                "path": "user/#",
+                "id": "lv2_MenuObj_51",
+                "ic": ""
+            },
+            {
+                "name": "Emis và BC gửi phòng/sở",
+                "path": "user/#",
+                "id": "lv2_MenuObj_52",
+                "ic": ""
+            },
+            {
+                "name": "Báo cáo TK cán bộ",
+                "path": "user/#",
+                "id": "lv2_MenuObj_53",
+                "ic": ""
+            },
+            {
+                "name": "Báo cáo khác",
+                "path": "user/#",
+                "id": "lv2_MenuObj_54",
+                "ic": ""
+            }
+        ]
+    },
+    {
+        "name": "Y tế",
+        "path": "user/#",
+        "id": "lv1_MenuObj_55",
+        "ic": "",
+        "sub": [{
+                "name": "Sức khỏe ngày",
+                "path": "user/#",
+                "id": "lv2_MenuObj_56",
+                "ic": ""
+            },
+            {
+                "name": "Bệnh truyền nhiễm",
+                "path": "user/#",
+                "id": "lv2_MenuObj_57",
+                "ic": ""
+            },
+            {
+                "name": "TK kết quả khám SK",
+                "path": "user/#",
+                "id": "lv2_MenuObj_58",
+                "ic": ""
+            }
+        ]
+    },
+    {
+        "name": "Liên lạc",
+        "path": "user/#",
+        "id": "lv1_MenuObj_59",
+        "ic": "",
+        "sub": [{
+                "name": "PHHS",
+                "path": "user/#",
+                "id": "lv2_MenuObj_60",
+                "ic": ""
+            },
+            {
+                "name": "Giáo viên",
+                "path": "user/#",
+                "id": "lv2_MenuObj_61",
+                "ic": ""
+            },
+            {
+                "name": "Cấu hình",
+                "path": "user/#",
+                "id": "lv2_MenuObj_62",
+                "ic": ""
+            },
+            {
+                "name": "Bản tin",
+                "path": "user/#",
+                "id": "lv2_MenuObj_63",
+                "ic": ""
+            },
+            {
+                "name": "Nhóm liên lạc",
+                "path": "user/#",
+                "id": "lv2_MenuObj_64",
+                "ic": ""
+            },
+            {
+                "name": "DS liên lạc",
+                "path": "user/#",
+                "id": "lv2_MenuObj_65",
+                "ic": ""
+            },
+            {
+                "name": "Tài khoản",
+                "path": "user/#",
+                "id": "lv2_MenuObj_66",
+                "ic": ""
+            },
+            {
+                "name": "Thống kê liên lạc",
+                "path": "user/#",
+                "id": "lv2_MenuObj_67",
+                "ic": ""
+            }
+        ]
+    },
+    {
+        "name": "Danh mục",
+        "path": "user/#",
+        "id": "lv1_MenuObj_68",
+        "ic": "",
+        "sub": [{
+                "name": "Lỗi vi phạm quy chế thi",
+                "path": "user/#",
+                "id": "lv2_MenuObj_69",
+                "ic": ""
+            },
+            {
+                "name": "Loại điểm thi đua",
+                "path": "user/#",
+                "id": "lv2_MenuObj_70",
+                "ic": ""
+            },
+            {
+                "name": "Sáng kiến kinh nghiệm",
+                "path": "user/#",
+                "id": "lv2_MenuObj_71",
+                "ic": ""
+            },
+            {
+                "name": "Công việc kiểm nghiệm",
+                "path": "user/#",
+                "id": "lv2_MenuObj_72",
+                "ic": ""
+            },
+            {
+                "name": "Khen thưởng kỷ luật",
+                "path": "user/#",
+                "id": "lv2_MenuObj_73",
+                "ic": ""
+            },
+            {
+                "name": "Nhóm lỗi vi phạm",
+                "path": "user/#",
+                "id": "lv2_MenuObj_74",
+                "ic": ""
+            },
+            {
+                "name": "Lỗi vi phạm",
+                "path": "user/#",
+                "id": "lv2_MenuObj_75",
+                "ic": ""
+            }
+        ]
+    }
+]

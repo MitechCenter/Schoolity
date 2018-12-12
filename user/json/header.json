@@ -1,0 +1,32 @@
+
+[
+    {
+        "name": "STT",
+        "width": "5%"
+    },
+    
+    {
+        "name": "Mã Số HS",
+        "width": "15%"
+    },
+    {
+        "name": "Tên HS",
+        "width": "15%"
+    },
+    {
+        "name": "SĐT",
+        "width": "16%"
+    },
+    {
+        "name": "Địa chỉ",
+        "width": "20%"
+    },
+    {
+        "name": "Email",
+        "width": "18%"
+    },
+    {
+        "name": "Hoạt động",
+        "width": "26%"
+    }
+]

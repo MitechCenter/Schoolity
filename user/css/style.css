@@ -1,0 +1,136 @@
+.breadcrumb,
+.pager,
+nav ol,
+nav ul,
+ul {
+    list-style: none;
+}
+
+body,
+dl,
+fieldset,
+figure,
+form,
+menu,
+ol,
+pre,
+ul {
+    margin: 0 !important;
+}
+
+form>i {
+    font-size: 20px !important;
+    color: yellow !important;
+}
+
+input {
+    border: 0px;
+}
+
+input:focus {
+    outline: none !important;
+}
+
+.plf-100 {
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.text-decor-none {
+    text-decoration: none !important;
+}
+
+.border {
+    border-color: grey;
+    border-radius: 10px;
+}
+
+.border-bottom {
+    border-bottom: 1px solid#a7a7a7 !important;
+}
+
+.box-shadow:hover {
+    box-shadow: 0 0 30px -5px #9e9c9e;
+}
+
+/*-------------------------------------------------------------- # Typography --------------------------------------------------------------*/
+
+body,
+button,
+input,
+select,
+textarea {
+    color: #404040;
+    font-family: 'Arial', sans-serif !important;
+    font-size: 13px !important;
+    font-size: 0.875rem !important;
+    line-height: 1.5 !important;
+}
+
+.header {
+    background-color: #red!important;
+}
+
+.icon-bar i {
+    color: white;
+    font-size: 30px;
+}
+
+.icon-bar i:hover {
+    color: #ff0000;
+}
+
+.menu-top,
+.border-orange {
+    border-bottom: 1px solid #ffa82c;
+}
+
+.list-menu {
+    height: 30px;
+}
+
+.list-menu .list-menu-items {
+    height: 100%;
+}
+
+.list-menu .list-menu-items:hover {
+    border-bottom: 2px solid #ffa82c;
+}
+
+.main {
+    width: 30%;
+}
+
+.search-menu {
+    width: 30%;
+}
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+    border-radius: 1.25rem;
+    margin: 0 !important;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    width: 2.375rem;
+    line-height: 32px;
+    text-align: center;
+    pointer-events: none;
+    color: #ffa82c;
+}
+
+.form-control:focus {
+    border-color: red !important;
+}
+
+.introduce {
+    position: relative;
+}
+
+.introduce .text-introduce {
+    position: absolute;
+    top: 20%;
+    left: 80px;
+}

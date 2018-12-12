@@ -1,0 +1,25 @@
+
+[
+    {
+        "mon": "STT",
+        "width": "5%"
+        
+    },
+
+    {
+        "mon": "Tên Lớp",
+        "width": "10%"
+    },
+    {
+        "mon": "Trạng Thái",
+        "width": "20%"
+    },
+    {
+        "mon": "Lần tổng kết gần nhất",
+        "width": "35%"
+    },
+    {
+        "mon": "Số HS đã tổng kết/ Tổng số HS",
+        "width": "30%"
+    }  
+]

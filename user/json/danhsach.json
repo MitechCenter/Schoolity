@@ -1,0 +1,805 @@
+{
+    "danhsach":
+[
+    {
+        "id": 1000, 
+        "maHocSinh": "DTC1000", 
+        "tenHocSinh": "Đào Văn Mỹ", 
+        "soDienThoai": "080972122099", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_0@schoolity.com"
+    },
+    {
+        "id": 1, 
+        "maHocSinh": "DTC1001", 
+        "tenHocSinh": "Lê Văn Hân", 
+        "soDienThoai": "087081906233", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_1@schoolity.com"
+    },
+    {
+        "id": 2, 
+        "maHocSinh": "DTC1002", 
+        "tenHocSinh": "Lê Khánh Thủy", 
+        "soDienThoai": "085823688015", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_2@schoolity.com"
+    },
+    {
+        "id": 3, 
+        "maHocSinh": "DTC1003", 
+        "tenHocSinh": "Trần Thị Tuyền", 
+        "soDienThoai": "084218944280", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_3@schoolity.com"
+    },
+    {
+        "id": 4, 
+        "maHocSinh": "DTC1004", 
+        "tenHocSinh": "Nguyễn Khánh Hào", 
+        "soDienThoai": "089726141574", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_4@schoolity.com"
+    },
+    {
+        "id": 5, 
+        "maHocSinh": "DTC1005", 
+        "tenHocSinh": "Nguyễn Thị Mỹ", 
+        "soDienThoai": "081324477448", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_5@schoolity.com"
+    },
+    {
+        "id": 6, 
+        "maHocSinh": "DTC1006", 
+        "tenHocSinh": "Nhữ Hùng Hoàng", 
+        "soDienThoai": "080585824189", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_6@schoolity.com"
+    },
+    {
+        "id": 7, 
+        "maHocSinh": "DTC1007", 
+        "tenHocSinh": "Nhữ Khánh Mỹ", 
+        "soDienThoai": "081282694065", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_7@schoolity.com"
+    },
+    {
+        "id": 8, 
+        "maHocSinh": "DTC1008", 
+        "tenHocSinh": "Nhữ Hùng Thủy", 
+        "soDienThoai": "086568620603", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_8@schoolity.com"
+    },
+    {
+        "id": 9, 
+        "maHocSinh": "DTC1009", 
+        "tenHocSinh": "Nhữ Khánh Tuyền", 
+        "soDienThoai": "089050157925", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_9@schoolity.com"
+    },
+    {
+        "id": 10, 
+        "maHocSinh": "DTC10010", 
+        "tenHocSinh": "Đặng Hùng Phát", 
+        "soDienThoai": "083627483404", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_10@schoolity.com"
+    },
+    {
+        "id": 11, 
+        "maHocSinh": "DTC10011", 
+        "tenHocSinh": "Trần Gia Phát", 
+        "soDienThoai": "089190767289", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_11@schoolity.com"
+    },
+    {
+        "id": 12, 
+        "maHocSinh": "DTC10012", 
+        "tenHocSinh": "Nguyễn Văn Mỹ", 
+        "soDienThoai": "088142190962", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_12@schoolity.com"
+    },
+    {
+        "id": 13, 
+        "maHocSinh": "DTC10013", 
+        "tenHocSinh": "Phạm Khánh Trung", 
+        "soDienThoai": "080607536358", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_13@schoolity.com"
+    },
+    {
+        "id": 14, 
+        "maHocSinh": "DTC10014", 
+        "tenHocSinh": "Trần Hùng Trung", 
+        "soDienThoai": "082264285430", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_14@schoolity.com"
+    },
+    {
+        "id": 15, 
+        "maHocSinh": "DTC10015", 
+        "tenHocSinh": "Đào Gia Phát", 
+        "soDienThoai": "080092116342", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_15@schoolity.com"
+    },
+    {
+        "id": 16, 
+        "maHocSinh": "DTC10016", 
+        "tenHocSinh": "Đào Hùng Phát", 
+        "soDienThoai": "085531864111", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_16@schoolity.com"
+    },
+    {
+        "id": 17, 
+        "maHocSinh": "DTC10017", 
+        "tenHocSinh": "Nguyễn Thị Hào", 
+        "soDienThoai": "086931969474", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_17@schoolity.com"
+    },
+    {
+        "id": 18, 
+        "maHocSinh": "DTC10018", 
+        "tenHocSinh": "Đào Văn Nghĩa", 
+        "soDienThoai": "084162633062", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_18@schoolity.com"
+    },
+    {
+        "id": 19, 
+        "maHocSinh": "DTC10019", 
+        "tenHocSinh": "Nguyễn Gia Hoàng", 
+        "soDienThoai": "088757060035", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_19@schoolity.com"
+    },
+    {
+        "id": 20, 
+        "maHocSinh": "DTC10020", 
+        "tenHocSinh": "Phạm Thị Thủy", 
+        "soDienThoai": "087729050200", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_20@schoolity.com"
+    },
+    {
+        "id": 21, 
+        "maHocSinh": "DTC10021", 
+        "tenHocSinh": "Lê Hùng Thủy", 
+        "soDienThoai": "086464789215", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_21@schoolity.com"
+    },
+    {
+        "id": 22, 
+        "maHocSinh": "DTC10022", 
+        "tenHocSinh": "Nguyễn Hùng Thủy", 
+        "soDienThoai": "086393414755", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_22@schoolity.com"
+    },
+    {
+        "id": 23, 
+        "maHocSinh": "DTC10023", 
+        "tenHocSinh": "Đặng Hùng Hân", 
+        "soDienThoai": "083840080288", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_23@schoolity.com"
+    },
+    {
+        "id": 24, 
+        "maHocSinh": "DTC10024", 
+        "tenHocSinh": "Nguyễn Thị Hào", 
+        "soDienThoai": "083393172845", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_24@schoolity.com"
+    },
+    {
+        "id": 25, 
+        "maHocSinh": "DTC10025", 
+        "tenHocSinh": "Đặng Khánh Hậu", 
+        "soDienThoai": "081036925526", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_25@schoolity.com"
+    },
+    {
+        "id": 26, 
+        "maHocSinh": "DTC10026", 
+        "tenHocSinh": "Đào Hùng Trung", 
+        "soDienThoai": "089379399086", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_26@schoolity.com"
+    },
+    {
+        "id": 27, 
+        "maHocSinh": "DTC10027", 
+        "tenHocSinh": "Nhữ Hùng Nghĩa", 
+        "soDienThoai": "083138810499", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_27@schoolity.com"
+    },
+    {
+        "id": 28, 
+        "maHocSinh": "DTC10028", 
+        "tenHocSinh": "Lê Gia Trung", 
+        "soDienThoai": "087113933382", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_28@schoolity.com"
+    },
+    {
+        "id": 29, 
+        "maHocSinh": "DTC10029", 
+        "tenHocSinh": "Nhữ Văn Thủy", 
+        "soDienThoai": "082989822707", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_29@schoolity.com"
+    },
+    {
+        "id": 30, 
+        "maHocSinh": "DTC10030", 
+        "tenHocSinh": "Nhữ Thị Hào", 
+        "soDienThoai": "085071368964", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_30@schoolity.com"
+    },
+    {
+        "id": 31, 
+        "maHocSinh": "DTC10031", 
+        "tenHocSinh": "Lê Gia Tuấn", 
+        "soDienThoai": "087568209709", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_31@schoolity.com"
+    },
+    {
+        "id": 32, 
+        "maHocSinh": "DTC10032", 
+        "tenHocSinh": "Đào Văn Mỹ", 
+        "soDienThoai": "086552882968", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_32@schoolity.com"
+    },
+    {
+        "id": 33, 
+        "maHocSinh": "DTC10033", 
+        "tenHocSinh": "Trần Văn Tuấn", 
+        "soDienThoai": "082017597904", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_33@schoolity.com"
+    },
+    {
+        "id": 34, 
+        "maHocSinh": "DTC10034", 
+        "tenHocSinh": "Nguyễn Thị Tuấn", 
+        "soDienThoai": "080344226987", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_34@schoolity.com"
+    },
+    {
+        "id": 35, 
+        "maHocSinh": "DTC10035", 
+        "tenHocSinh": "Phạm Hùng Tuấn", 
+        "soDienThoai": "084443367421", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_35@schoolity.com"
+    },
+    {
+        "id": 36, 
+        "maHocSinh": "DTC10036", 
+        "tenHocSinh": "Nguyễn Gia Phát", 
+        "soDienThoai": "082359995840", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_36@schoolity.com"
+    },
+    {
+        "id": 37, 
+        "maHocSinh": "DTC10037", 
+        "tenHocSinh": "Nhữ Hùng Tuyền", 
+        "soDienThoai": "086776362584", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_37@schoolity.com"
+    },
+    {
+        "id": 38, 
+        "maHocSinh": "DTC10038", 
+        "tenHocSinh": "Lê Gia Phát", 
+        "soDienThoai": "088165944573", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_38@schoolity.com"
+    },
+    {
+        "id": 39, 
+        "maHocSinh": "DTC10039", 
+        "tenHocSinh": "Lê Thị Hậu", 
+        "soDienThoai": "080267389738", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_39@schoolity.com"
+    },
+    {
+        "id": 40, 
+        "maHocSinh": "DTC10040", 
+        "tenHocSinh": "Nhữ Gia Phát", 
+        "soDienThoai": "085481089134", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_40@schoolity.com"
+    },
+    {
+        "id": 41, 
+        "maHocSinh": "DTC10041", 
+        "tenHocSinh": "Phạm Hùng Hân", 
+        "soDienThoai": "085129467673", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_41@schoolity.com"
+    },
+    {
+        "id": 42, 
+        "maHocSinh": "DTC10042", 
+        "tenHocSinh": "Nguyễn Hùng Tuấn", 
+        "soDienThoai": "087104077643", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_42@schoolity.com"
+    },
+    {
+        "id": 43, 
+        "maHocSinh": "DTC10043", 
+        "tenHocSinh": "Phạm Hùng Trung", 
+        "soDienThoai": "088122402704", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_43@schoolity.com"
+    },
+    {
+        "id": 44, 
+        "maHocSinh": "DTC10044", 
+        "tenHocSinh": "Đặng Hùng Hào", 
+        "soDienThoai": "087973508679", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_44@schoolity.com"
+    },
+    {
+        "id": 45, 
+        "maHocSinh": "DTC10045", 
+        "tenHocSinh": "Trần Thị Hoàng", 
+        "soDienThoai": "082108330330", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_45@schoolity.com"
+    },
+    {
+        "id": 46, 
+        "maHocSinh": "DTC10046", 
+        "tenHocSinh": "Nhữ Khánh Mỹ", 
+        "soDienThoai": "088596485194", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_46@schoolity.com"
+    },
+    {
+        "id": 47, 
+        "maHocSinh": "DTC10047", 
+        "tenHocSinh": "Trần Văn Nghĩa", 
+        "soDienThoai": "085351474456", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_47@schoolity.com"
+    },
+    {
+        "id": 48, 
+        "maHocSinh": "DTC10048", 
+        "tenHocSinh": "Lê Thị Hân", 
+        "soDienThoai": "082046224023", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_48@schoolity.com"
+    },
+    {
+        "id": 49, 
+        "maHocSinh": "DTC10049", 
+        "tenHocSinh": "Đào Khánh Nghĩa", 
+        "soDienThoai": "089474820988", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_49@schoolity.com"
+    },
+    {
+        "id": 50, 
+        "maHocSinh": "DTC10050", 
+        "tenHocSinh": "Đào Khánh Phát", 
+        "soDienThoai": "083048235695", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_50@schoolity.com"
+    },
+    {
+        "id": 51, 
+        "maHocSinh": "DTC10051", 
+        "tenHocSinh": "Đặng Văn Nghĩa", 
+        "soDienThoai": "086530609102", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_51@schoolity.com"
+    },
+    {
+        "id": 52, 
+        "maHocSinh": "DTC10052", 
+        "tenHocSinh": "Đặng Văn Hậu", 
+        "soDienThoai": "083119371880", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_52@schoolity.com"
+    },
+    {
+        "id": 53, 
+        "maHocSinh": "DTC10053", 
+        "tenHocSinh": "Nguyễn Văn Hào", 
+        "soDienThoai": "082460995628", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_53@schoolity.com"
+    },
+    {
+        "id": 54, 
+        "maHocSinh": "DTC10054", 
+        "tenHocSinh": "Nguyễn Hùng Nghĩa", 
+        "soDienThoai": "082077288855", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_54@schoolity.com"
+    },
+    {
+        "id": 55, 
+        "maHocSinh": "DTC10055", 
+        "tenHocSinh": "Nhữ Khánh Hoàng", 
+        "soDienThoai": "089364217320", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_55@schoolity.com"
+    },
+    {
+        "id": 56, 
+        "maHocSinh": "DTC10056", 
+        "tenHocSinh": "Nguyễn Khánh Hào", 
+        "soDienThoai": "089588652243", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_56@schoolity.com"
+    },
+    {
+        "id": 57, 
+        "maHocSinh": "DTC10057", 
+        "tenHocSinh": "Đặng Hùng Hậu", 
+        "soDienThoai": "088712514766", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_57@schoolity.com"
+    },
+    {
+        "id": 58, 
+        "maHocSinh": "DTC10058", 
+        "tenHocSinh": "Lê Khánh Hậu", 
+        "soDienThoai": "082279996663", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_58@schoolity.com"
+    },
+    {
+        "id": 59, 
+        "maHocSinh": "DTC10059", 
+        "tenHocSinh": "Nguyễn Thị Hân", 
+        "soDienThoai": "081986100210", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_59@schoolity.com"
+    },
+    {
+        "id": 60, 
+        "maHocSinh": "DTC10060", 
+        "tenHocSinh": "Nguyễn Văn Phát", 
+        "soDienThoai": "082517607940", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_60@schoolity.com"
+    },
+    {
+        "id": 61, 
+        "maHocSinh": "DTC10061", 
+        "tenHocSinh": "Đặng Thị Mỹ", 
+        "soDienThoai": "086593026616", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_61@schoolity.com"
+    },
+    {
+        "id": 62, 
+        "maHocSinh": "DTC10062", 
+        "tenHocSinh": "Nguyễn Văn Trung", 
+        "soDienThoai": "089853059583", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_62@schoolity.com"
+    },
+    {
+        "id": 63, 
+        "maHocSinh": "DTC10063", 
+        "tenHocSinh": "Đặng Gia Hậu", 
+        "soDienThoai": "087513619916", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_63@schoolity.com"
+    },
+    {
+        "id": 64, 
+        "maHocSinh": "DTC10064", 
+        "tenHocSinh": "Trần Thị Tuấn", 
+        "soDienThoai": "088570656829", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_64@schoolity.com"
+    },
+    {
+        "id": 65, 
+        "maHocSinh": "DTC10065", 
+        "tenHocSinh": "Đặng Văn Trung", 
+        "soDienThoai": "080744980120", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_65@schoolity.com"
+    },
+    {
+        "id": 66, 
+        "maHocSinh": "DTC10066", 
+        "tenHocSinh": "Trần Khánh Trung", 
+        "soDienThoai": "085785632328", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_66@schoolity.com"
+    },
+    {
+        "id": 67, 
+        "maHocSinh": "DTC10067", 
+        "tenHocSinh": "Đặng Văn Trung", 
+        "soDienThoai": "087337350128", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_67@schoolity.com"
+    },
+    {
+        "id": 68, 
+        "maHocSinh": "DTC10068", 
+        "tenHocSinh": "Nguyễn Văn Tuấn", 
+        "soDienThoai": "083727898687", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_68@schoolity.com"
+    },
+    {
+        "id": 69, 
+        "maHocSinh": "DTC10069", 
+        "tenHocSinh": "Phạm Hùng Hoàng", 
+        "soDienThoai": "085674523251", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_69@schoolity.com"
+    },
+    {
+        "id": 70, 
+        "maHocSinh": "DTC10070", 
+        "tenHocSinh": "Phạm Hùng Hoàng", 
+        "soDienThoai": "080373436043", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_70@schoolity.com"
+    },
+    {
+        "id": 71, 
+        "maHocSinh": "DTC10071", 
+        "tenHocSinh": "Đào Văn Thủy", 
+        "soDienThoai": "087042526326", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_71@schoolity.com"
+    },
+    {
+        "id": 72, 
+        "maHocSinh": "DTC10072", 
+        "tenHocSinh": "Trần Văn Mỹ", 
+        "soDienThoai": "082744883562", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_72@schoolity.com"
+    },
+    {
+        "id": 73, 
+        "maHocSinh": "DTC10073", 
+        "tenHocSinh": "Phạm Khánh Trung", 
+        "soDienThoai": "087805340009", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_73@schoolity.com"
+    },
+    {
+        "id": 74, 
+        "maHocSinh": "DTC10074", 
+        "tenHocSinh": "Đào Gia Tuấn", 
+        "soDienThoai": "082092292862", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_74@schoolity.com"
+    },
+    {
+        "id": 75, 
+        "maHocSinh": "DTC10075", 
+        "tenHocSinh": "Đặng Thị Thủy", 
+        "soDienThoai": "088837905938", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_75@schoolity.com"
+    },
+    {
+        "id": 76, 
+        "maHocSinh": "DTC10076", 
+        "tenHocSinh": "Đặng Văn Hậu", 
+        "soDienThoai": "083396853795", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_76@schoolity.com"
+    },
+    {
+        "id": 77, 
+        "maHocSinh": "DTC10077", 
+        "tenHocSinh": "Đặng Thị Hào", 
+        "soDienThoai": "086825089388", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_77@schoolity.com"
+    },
+    {
+        "id": 78, 
+        "maHocSinh": "DTC10078", 
+        "tenHocSinh": "Đặng Văn Mỹ", 
+        "soDienThoai": "083574016130", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_78@schoolity.com"
+    },
+    {
+        "id": 79, 
+        "maHocSinh": "DTC10079", 
+        "tenHocSinh": "Nguyễn Văn Thủy", 
+        "soDienThoai": "082920757002", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_79@schoolity.com"
+    },
+    {
+        "id": 80, 
+        "maHocSinh": "DTC10080", 
+        "tenHocSinh": "Nguyễn Khánh Tuấn", 
+        "soDienThoai": "082580315043", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_80@schoolity.com"
+    },
+    {
+        "id": 81, 
+        "maHocSinh": "DTC10081", 
+        "tenHocSinh": "Phạm Thị Tuyền", 
+        "soDienThoai": "083890049137", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_81@schoolity.com"
+    },
+    {
+        "id": 82, 
+        "maHocSinh": "DTC10082", 
+        "tenHocSinh": "Nguyễn Gia Nghĩa", 
+        "soDienThoai": "083394847723", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_82@schoolity.com"
+    },
+    {
+        "id": 83, 
+        "maHocSinh": "DTC10083", 
+        "tenHocSinh": "Đặng Văn Phát", 
+        "soDienThoai": "087942962388", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_83@schoolity.com"
+    },
+    {
+        "id": 84, 
+        "maHocSinh": "DTC10084", 
+        "tenHocSinh": "Nguyễn Thị Hào", 
+        "soDienThoai": "083491231037", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_84@schoolity.com"
+    },
+    {
+        "id": 85, 
+        "maHocSinh": "DTC10085", 
+        "tenHocSinh": "Đào Gia Hoàng", 
+        "soDienThoai": "087964956847", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_85@schoolity.com"
+    },
+    {
+        "id": 86, 
+        "maHocSinh": "DTC10086", 
+        "tenHocSinh": "Trần Khánh Hoàng", 
+        "soDienThoai": "089592256516", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_86@schoolity.com"
+    },
+    {
+        "id": 87, 
+        "maHocSinh": "DTC10087", 
+        "tenHocSinh": "Đặng Văn Hậu", 
+        "soDienThoai": "081588038700", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_87@schoolity.com"
+    },
+    {
+        "id": 88, 
+        "maHocSinh": "DTC10088", 
+        "tenHocSinh": "Nhữ Thị Nghĩa", 
+        "soDienThoai": "088570405437", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_88@schoolity.com"
+    },
+    {
+        "id": 89, 
+        "maHocSinh": "DTC10089", 
+        "tenHocSinh": "Trần Khánh Phát", 
+        "soDienThoai": "086379106987", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_89@schoolity.com"
+    },
+    {
+        "id": 90, 
+        "maHocSinh": "DTC10090", 
+        "tenHocSinh": "Trần Hùng Tuấn", 
+        "soDienThoai": "084576154161", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_90@schoolity.com"
+    },
+    {
+        "id": 91, 
+        "maHocSinh": "DTC10091", 
+        "tenHocSinh": "Nhữ Văn Thủy", 
+        "soDienThoai": "085321604125", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_91@schoolity.com"
+    },
+    {
+        "id": 92, 
+        "maHocSinh": "DTC10092", 
+        "tenHocSinh": "Nhữ Thị Phát", 
+        "soDienThoai": "087262493518", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_92@schoolity.com"
+    },
+    {
+        "id": 93, 
+        "maHocSinh": "DTC10093", 
+        "tenHocSinh": "Nguyễn Văn Hào", 
+        "soDienThoai": "086558829092", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_93@schoolity.com"
+    },
+    {
+        "id": 94, 
+        "maHocSinh": "DTC10094", 
+        "tenHocSinh": "Nguyễn Hùng Tuyền", 
+        "soDienThoai": "081704229264", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_94@schoolity.com"
+    },
+    {
+        "id": 95, 
+        "maHocSinh": "DTC10095", 
+        "tenHocSinh": "Lê Thị Hoàng", 
+        "soDienThoai": "088941662323", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_95@schoolity.com"
+    },
+    {
+        "id": 96, 
+        "maHocSinh": "DTC10096", 
+        "tenHocSinh": "Phạm Thị Thủy", 
+        "soDienThoai": "086607944088", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_96@schoolity.com"
+    },
+    {
+        "id": 97, 
+        "maHocSinh": "DTC10097", 
+        "tenHocSinh": "Đào Hùng Hoàng", 
+        "soDienThoai": "083708772493", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_97@schoolity.com"
+    },
+    {
+        "id": 98, 
+        "maHocSinh": "DTC10098", 
+        "tenHocSinh": "Lê Thị Trung", 
+        "soDienThoai": "087780981830", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_98@schoolity.com"
+    },
+    {
+        "id": 99, 
+        "maHocSinh": "DTC10099", 
+        "tenHocSinh": "Phạm Hùng Tuấn", 
+        "soDienThoai": "083777662559", 
+        "diaChi": "Số 13, Phường Vĩnh Hòa, TP. Nha Trang, Khánh Hòa", 
+        "email": "sinhvien_99@schoolity.com"
+    }
+]
+}

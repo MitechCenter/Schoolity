@@ -1,0 +1,42 @@
+
+[
+    {
+        "mon": "STT",
+        "width": "0.5%",
+        "id":"0x00"
+    },
+    {
+        "mon": "Mã Học Sinh",
+        "width": "10%",
+        "id":"0x00"
+    },
+
+
+    {
+        "mon": "Họ và tên",
+        "width": "10%",
+        "id":"0x00"
+    },
+    {
+        "mon": "Lớp",
+        "width": "5%",
+        "id":"0x03"
+    },
+   
+    {
+        "mon": "Học Lực",
+        "width": "7%",
+        "id":"0x02"
+    },
+    {
+        "mon": "Hạnh Kiểm",
+        "width": "7%",
+        "id":"0x03"
+    },
+    {
+        "mon": "Thuộc Diện",
+        "width": "10%",
+        "id":"0x03"
+    }
+
+]

@@ -1,0 +1,83 @@
+
+[
+    {
+        "mon": "STT",
+        "width": "0.5%",
+        "id":"0x01"
+    },
+    {
+        "mon": "Họ và tên",
+        "width": "20.5%",
+        "id":"0x02"
+    },
+    {
+        "mon": "Lớp",
+        "width": "10%",
+        "id":"0x03"
+    },
+    {
+        "mon": "Toán",
+        "width": "7%",
+        "id":"0x00"
+    },
+    {
+        "mon": "Vật lí",
+        "width": "7%",
+        "id":"0x00"
+    },
+    {
+        "mon": "Hóa Học",
+        "width": "7%",
+        "id":"0x00"
+    },
+    {
+        "mon": "Sinh Học",
+        "width": "7%",
+        "id":"0x00"
+    },
+    {
+        "mon": "Tin Học",
+        "width": "7%",
+        "id":"0x00"
+    },
+    {
+        "mon": "Ngữ Văn",
+        "width": "7%",
+        "id":"0x00"
+    },
+    {
+        "mon": "Lịch Sử",
+        "width": "7%",
+        "id":"0x00"
+    },
+    {
+        "mon": "Địa Lí",
+        "width": "7%",
+        "id":"0x00"
+    },
+    {
+        "mon": "Tiếng Anh",
+        "width": "7%",
+        "id":"0x00"
+    },
+    {
+        "mon": "GDCD",
+        "width": "7%",
+        "id":"0x00"
+    },
+    {
+        "mon": "Công Nghệ",
+        "width": "7%",
+        "id":"0x00"
+    },
+    {
+        "mon": "Thể Dục",
+        "width": "7%",
+        "id":"0x00"
+    },
+    {
+        "mon": "QPAN",
+        "width": "7%",
+        "id":"0x00"
+    }
+]

@@ -1,0 +1,78 @@
+
+[
+    {
+        "mon": "STT",
+        "width": "0.5%"
+
+    },
+    {
+        "mon": "Lớp",
+        "width": "5%"
+
+    },
+    {
+        "mon": "Mã Học Sinh",
+        "width": "10%"
+
+    },
+
+
+    {
+        "mon": "Họ và tên",
+        "width": "20.5%"
+
+    },
+    
+    {
+        "mon": "Toán",
+        "width": "7%"
+    },
+    {
+        "mon": "Vật lí",
+        "width": "7%"
+    },
+    {
+        "mon": "Hóa Học",
+        "width": "7%"
+    },
+    {
+        "mon": "Sinh Học",
+        "width": "7%"
+    },
+    {
+        "mon": "Tin Học",
+        "width": "7%"
+    },
+    {
+        "mon": "Ngữ Văn",
+        "width": "7%"
+    },
+    {
+        "mon": "Lịch Sử",
+        "width": "7%"
+    },
+    {
+        "mon": "Địa Lí",
+        "width": "7%"
+    },
+    {
+        "mon": "Tiếng Anh",
+        "width": "7%"
+    },
+    {
+        "mon": "GDCD",
+        "width": "7%"
+    },
+    {
+        "mon": "Công Nghệ",
+        "width": "7%"
+    },
+    {
+        "mon": "Thể Dục",
+        "width": "7%"
+    },
+    {
+        "mon": "QPAN",
+        "width": "7%"
+    }
+]

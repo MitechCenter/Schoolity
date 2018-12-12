@@ -1,0 +1,202 @@
+ {
+      "kqxeploaithilai": [
+         {
+            "stt": "1",
+            "mahs": "THPTPL080",
+            "hoten": "Lý Dân Sự",
+            "lop": "10A3",
+            "HL": "Kém",
+            "HK": "tb",
+            "thuocdien": "Ở lại lớp"
+         },
+         {
+            "stt": "2",
+            "mahs": "THPTPL093",
+            "hoten": "Vi Đình Tuý",
+            "lop": "10A3",
+            "HL": "Yếu",
+            "HK": "khá",
+            "thuocdien": "Ở lại lớp"
+         },
+         {
+            "stt": "3",
+            "mahs": "THPTPL101",
+            "hoten": "Hà Văn Doanh",
+            "lop": "10A4",
+            "HL": "Tb",
+            "HK": "tb",
+            "thuocdien": "Lên lớp"
+         },
+         {
+            "stt": "4",
+            "mahs": "THPTPL111",
+            "hoten": "Trần Đức Khánh",
+            "lop": "10A4",
+            "HL": "Tb",
+            "HK": "tb",
+            "thuocdien": "Lên lớp"
+         },
+         {
+            "stt": "5",
+            "mahs": "THPTPL110",
+            "hoten": "Trần Quốc Hữu",
+            "lop": "10A4",
+            "HL": "Yếu",
+            "HK": "tb",
+            "thuocdien": "Ở lại lớp"
+         },
+         {
+            "stt": "6",
+            "mahs": "THPTPL180",
+            "hoten": "Đàm Tuấn  Vỹ",
+            "lop": "10A5",
+            "HL": "Tb",
+            "HK": "tb",
+            "thuocdien": "Lên lớp"
+         },
+         {
+            "stt": "7",
+            "mahs": "THPTPL149",
+            "hoten": "Hoàng Văn  Hòa",
+            "lop": "10A5",
+            "HL": "Tb",
+            "HK": "khá",
+            "thuocdien": "Lên lớp"
+         },
+         {
+            "stt": "8",
+            "mahs": "THPTPL147",
+            "hoten": "Ninh Ngọc  Đức",
+            "lop": "10A5",
+            "HL": "Yếu",
+            "HK": "tb",
+            "thuocdien": "Ở lại lớp"
+         },
+         {
+            "stt": "9",
+            "mahs": "THPTPL156",
+            "hoten": "Nguyễn Hoàng Long",
+            "lop": "10A5",
+            "HL": "Tb",
+            "HK": "tb",
+            "thuocdien": "Lên lớp"
+         },
+         {
+            "stt": "10",
+            "mahs": "THPTPL207",
+            "hoten": "Hà Minh  Quang",
+            "lop": "10A6",
+            "HL": "Yếu",
+            "HK": "tb",
+            "thuocdien": "Ở lại lớp"
+         },
+         {
+            "stt": "11",
+            "mahs": "THPTPL214",
+            "hoten": "Hoàng Văn  Thụy",
+            "lop": "10A6",
+            "HL": "Kém",
+            "HK": "tb",
+            "thuocdien": "Ở lại lớp"
+         },
+         {
+            "stt": "12",
+            "mahs": "THPTPL213",
+            "hoten": "Mạc Đức  Thơm",
+            "lop": "10A6",
+            "HL": "Kém",
+            "HK": "tb",
+            "thuocdien": "Ở lại lớp"
+         },
+         {
+            "stt": "13",
+            "mahs": "THPTPL289",
+            "hoten": "Hầu  Văn Thiên",
+            "lop": "11B2",
+            "HL": "Tb",
+            "HK": "khá",
+            "thuocdien": "Lên lớp"
+         },
+         {
+            "stt": "14",
+            "mahs": "THPTPL298",
+            "hoten": "Hoàng Văn Vĩnh",
+            "lop": "11B2",
+            "HL": "Tb",
+            "HK": "tb",
+            "thuocdien": "Lên lớp"
+         },
+         {
+            "stt": "15",
+            "mahs": "THPTPL271",
+            "hoten": "La Minh Giang",
+            "lop": "11B2",
+            "HL": "Tb",
+            "HK": "tb",
+            "thuocdien": "Lên lớp"
+         },
+         {
+            "stt": "16",
+            "mahs": "THPTPL370",
+            "hoten": "Lý Anh Tuấn",
+            "lop": "11B4",
+            "HL": "Tb",
+            "HK": "khá",
+            "thuocdien": "Lên lớp"
+         },
+         {
+            "stt": "17",
+            "mahs": "THPTPL359",
+            "hoten": "Nguyễn Thị Lành",
+            "lop": "11B4",
+            "HL": "Kém",
+            "HK": "khá",
+            "thuocdien": "Ở lại lớp"
+         },
+         {
+            "stt": "18",
+            "mahs": "THPTPL371",
+            "hoten": "Nguyễn Thị Tuyết",
+            "lop": "11B4",
+            "HL": "Tb",
+            "HK": "khá",
+            "thuocdien": "Lên lớp"
+         },
+         {
+            "stt": "19",
+            "mahs": "THPTPL361",
+            "hoten": "Nguyễn Trung Oánh",
+            "lop": "11B4",
+            "HL": "Yếu",
+            "HK": "khá",
+            "thuocdien": "Ở lại lớp"
+         },
+         {
+            "stt": "20",
+            "mahs": "THPTPL360",
+            "hoten": "Trần Văn May",
+            "lop": "11B4",
+            "HL": "Yếu",
+            "HK": "khá",
+            "thuocdien": "Ở lại lớp"
+         },
+         {
+            "stt": "21",
+            "mahs": "THPTPL382",
+            "hoten": "Đặng Thị Hạnh",
+            "lop": "11B5",
+            "HL": "Tb",
+            "HK": "khá",
+            "thuocdien": "Lên lớp"
+         },
+         {
+            "stt": "22",
+            "mahs": "THPTPL392",
+            "hoten": "Vi Văn Minh",
+            "lop": "11B5",
+            "HL": "Tb",
+            "HK": "khá",
+            "thuocdien": "Lên lớp"
+         }
+      ]
+}

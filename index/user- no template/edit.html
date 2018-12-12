@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- base mục đích dòng này để chỉ định thư mục mặc định mình đang muốn link css hoặc js  -->
+	<base href="../../">
+	<title>user</title>
+	<meta charset=utf-8>
+	<link rel="stylesheet" type="text/css" href="./css/form_user.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	 crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+	 crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+	 crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./css/separate/elements/steps.css">
+	<link rel="stylesheet" href="./css/separate/form/form.css">
+	<link rel="stylesheet" href="./css/material-design.css">
+</head>
+<body>
+	<!-- khi sử dụng sẽ xóa d-block và add fade -->
+	<!--chinh sua modal-->
+	<div class="modal d-block bd-example-modal-lg" id="editModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+	 aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<form class="needs-validation" novalidate>
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title"><b>Chỉnh Sữa</b></h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form class="needs-validation" novalidate>
+							<div class="card-header">
+								<div class="steps-icon-progress">
+									<ul>
+										<li class="active">
+											<div class="icon">
+												<a data-toggle="collapse" data-target="#collapseThongTin1" aria-expanded="false" aria-controls="collapseThongTin1">1</a>
+											</div>
+											<div class="caption">Thông Tin 1</div>
+										</li>
+										<li class="active">
+											<div class="icon">
+												<a data-toggle="collapse" data-target="#collapseThongTin2" aria-expanded="false" aria-controls="collapseThongTin2">2</a>
+											</div>
+											<div class="caption">Thông Tin 2</div>
+										</li>
+										<li>
+											<div class="icon">
+												<a data-toggle="collapse" data-target="#collapseThongTin3" aria-expanded="false" aria-controls="collapseThongTin3">3</a>
+											</div>
+											<div class="caption">Thông Tin 3</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div id="formThongTin" class="card-body">
+								<div id="collapseThongTin1" class="collapse show" data-parent="#formThongTin" aria-labelledby="headingOne">
+									<!-- đây là form thông tin 1-->
+									<div>
+										<div class="d-flex justify-content-start plr-100 mb-3">
+											<div class="p-2">
+												<i class="fa fa-id-card-o fa-lg" aria-hidden="true"></i>
+											</div>
+											<div class="w-100">
+												<input type="text" class="form-control" id="inputTen" placeholder="Nhập mã số HS" value="" required>
+												<div class="invalid-feedback">xin vui lòng nhập thông tin</div>
+											</div>
+										</div>
+										<div class="d-flex justify-content-start plr-100 mb-3">
+											<div class="p-2">
+												<i class="fa fa-user fa-lg" aria-hidden="true"></i>
+											</div>
+											<div class="w-100 pl-2">
+												<input type="text" class="form-control" id="inputTen" placeholder="Nhập Tên" value="" required>
+												<div class="invalid-feedback">xin vui lòng nhập thông tin</div>
+											</div>
+										</div>
+										<div class="d-flex justify-content-start plr-100 mb-3">
+											<div class="p-2">
+												<i class="fa fa-location-arrow fa-lg" aria-hidden="true"></i>
+											</div>
+											<div class="w-100 pl-2">
+												<input type="text" class="form-control" id="inputTen" placeholder="Nhập Địa Chỉ" value="" required>
+												<div class="invalid-feedback">xin vui lòng nhập thông tin</div>
+											</div>
+										</div>
+										<div class="d-flex justify-content-start plr-100 mb-3">
+											<div class="p-2">
+												<i class="fa fa fa-phone fa-lg" aria-hidden="true"></i>
+											</div>
+											<div class="w-100 pl-2">
+												<input type="text" class="form-control" id="inputTen" placeholder="Nhập Số Điện Thoại" value="" required>
+												<div class="invalid-feedback">xin vui lòng nhập thông tin</div>
+											</div>
+										</div>
+										<div class="d-flex justify-content-start plr-100 mb-3">
+											<div class="p-2">
+												<i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
+											</div>
+											<div class="w-100 pl-2">
+												<input type="text" class="form-control" id="inputTen" placeholder="Nhập Email" value="" required>
+												<div class="invalid-feedback">xin vui lòng nhập thông tin</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="collapseThongTin2" class="collapse " data-parent="#formThongTin" aria-labelledby="headingOne">
+									<!-- 	form thong tin 2 -->
+									<div class="form-row">
+										<div class="col-md-6 mb-3">
+											<!-- <label for="inputTen">Ten</label> -->
+											<div class="form-row">
+												<div class="row-icon">
+													<i class="fa fa-user fa-lg"></i>
+												</div>
+												<div class="row-control">
+													<input type="text" class="form-control" id="inputTen" placeholder="Ten" value="" required>
+													<div class="invalid-feedback">xin vui lòng nhập thông tin</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 mb-3">
+											<!-- <label for="inputSDT">SDT</label> -->
+											<div class="form-row">
+												<div class="row-icon">
+													<i class="fa fa-phone fa-lg" aria-hidden="true"></i>
+												</div>
+												<div class="row-control">
+													<input type="text" class="form-control" id="inputSDT" placeholder="SDT" value="" required>
+													<div class="invalid-feedback">xin vui lòng nhập thông tin</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="form-row">
+										<div class="col-md-6 mb-3">
+											<!-- <label for="inputDiaChi">Dia Chi</label> -->
+											<div class="form-row">
+												<div class="row-icon">
+													<i class="fa fa-location-arrow fa-lg" aria-hidden="true"></i>
+												</div>
+												<div class="row-control">
+													<input type="text" class="form-control" id="inputDiaChi" placeholder="Dia Chi" value="" required>
+													<div class="invalid-feedback">xin vui lòng nhập thông tin</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 mb-3">
+											<!-- <label for="inputEmail">Email</label> -->
+											<div class="form-row">
+												<div class="row-icon">
+													<i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
+												</div>
+												<div class="row-control">
+													<input type="text" class="form-control" id="inputEmail" placeholder="Email" value="" required>
+													<div class="invalid-feedback">xin vui lòng nhập thông tin</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="form-row">
+										<div class="col-md-6 mb-3">
+											<!-- <label for="inputTen">Ten</label> -->
+											<div class="form-row">
+												<div class="row-icon">
+													<i class="fa fa-user fa-lg"></i>
+												</div>
+												<div class="row-control">
+													<input type="text" class="form-control" id="inputTen" placeholder="Ten" value="" required>
+													<div class="invalid-feedback">xin vui lòng nhập thông tin</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 mb-3">
+											<!-- <label for="inputSDT">SDT</label> -->
+											<div class="form-row">
+												<div class="row-icon">
+													<i class="fa fa-phone fa-lg" aria-hidden="true"></i>
+												</div>
+												<div class="row-control">
+													<input type="text" class="form-control" id="inputSDT" placeholder="SDT" value="" required>
+													<div class="invalid-feedback">xin vui lòng nhập thông tin</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="form-row">
+										<div class="col-md-6 mb-3">
+											<!-- <label for="inputDiaChi">Dia Chi</label> -->
+											<div class="form-row">
+												<div class="row-icon">
+													<i class="fa fa-location-arrow fa-lg" aria-hidden="true"></i>
+												</div>
+												<div class="row-control">
+													<input type="text" class="form-control" id="inputDiaChi" placeholder="Dia Chi" value="" required>
+													<div class="invalid-feedback">xin vui lòng nhập thông tin</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 mb-3">
+											<!-- <label for="inputEmail">Email</label> -->
+											<div class="form-row">
+												<div class="row-icon">
+													<i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
+												</div>
+												<div class="row-control">
+													<input type="text" class="form-control" id="inputEmail" placeholder="Email" value="" required>
+													<div class="invalid-feedback">xin vui lòng nhập thông tin</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="collapseThongTin3" class="collapse" data-parent="#formThongTin" aria-labelledby="headingOne">
+									form thong tin 3
+								</div>
+							</div>
+					</div>
+					<div class="modal-footer  justify-content-between">
+						<div>
+							<div class="d-flex text-danger">
+								<i class="fa fa-exclamation-triangle alert-icon" aria-hidden="true"></i>
+								<div class="alert-content">Cảnh báo lỗi từ hệ thống.</div>
+							</div>
+						</div>
+						<div>
+							<button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
+							<button type="submit" class="btn btn-primary">Save</button>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+
+</html>
