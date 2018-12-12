@@ -1,6 +1,8 @@
 # Schoolity
 https://github.com/futureskyprojects/Schoolity
 <br/>
+Check git work!
+<br/>
 * Ngày 30/11/2018:
 1. Sửa nút cancel của search box không có tác dụng
 2. Lấy thông tin, chuyển json khi nhấn nút "Tìm kiếm"
