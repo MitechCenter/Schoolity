@@ -1,0 +1,38 @@
+
+[
+    {
+        "mon": "STT",
+        "width": "5%"
+        
+    },
+
+    {
+        "mon": "Mã Học Sinh",
+        "width": "10%"
+    },
+    {
+        "mon": "Họ Tên ",
+        "width": "15%"
+    },
+    {
+        "mon": "Lớp",
+        "width": "15%"
+    },
+    {
+        "mon": "Điểm trước khi thi lại ",
+        "width": "15%"
+    },
+    {
+        "mon": "Điểm thi lại",
+        "width": "15%"
+    }  ,
+    {
+        "mon": "Vắng",
+        "width": "5%"
+    } ,
+    {
+        "mon": "Lý do",
+        "width": "30%"
+    } 
+
+]

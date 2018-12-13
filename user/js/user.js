@@ -9,9 +9,9 @@ var dsLinkMenu = {
     "diemdanh/diemdanh.html",
     "vipham/vipham.html",
     "-- TONG KET DIEM --",
-    "-- tong ket diem --",
-    "-- tong ket diem, xep loai theo khoi --",
-    "-- diem thi hoc ky --",
+    "tongketdiem/tongketdiem.html",
+    "tongketdiem/xeploaitheokhoi.html",
+    "tongketdiem/diemthihocky.html",
     "xeploaihanhkiem/xeploaihanhkiem.html",
     "xeploaihocluc/xeploaihocluc.html",
     "--qlthongtintotnghiep--",
@@ -94,7 +94,7 @@ ShoolityApp.controller('ShoolityCtrl', function ($scope, $http) {
           $("#RunningProgress").addClass("fade");
         });
     }
-    let showID = 15;
+    let showID = 1;
     $scope.CurrentActivity = getPath(showID); // set for start up
     renewEvent();
     $scope.$on('CurrentActivity', function (event, CurrentActivity) {
@@ -169,13 +169,12 @@ ShoolityApp.controller('ShoolityCtrl', function ($scope, $http) {
     .then(function (response) {
       var data;
       data = response.data;
-
       $scope.row = data;
     });
   // ------------------------ KET THUC BANG HO SO HOC SINH -------------------------------//
 
   // ------------------------ QUAN LÝ THI LẠI ------------------------------------//
-  // Tải header của table cap nhap diem
+  // Tải header của table đăng kí thi lại
 
 
   $scope.isHideInColumn = function (id) {
@@ -186,14 +185,27 @@ ShoolityApp.controller('ShoolityCtrl', function ($scope, $http) {
     .then(function (response) {
       $scope.thilai = response.data;
     });
-
-  // Tải danh sách học sinh cap nhap môn thi lại
+  // Tải danh sách học sinh đămh kí môn thi lại  môn thi lại
   $http.get("user/json/quanlythilai/dkymonthilai.json")
     .then(function (response) {
       var data;
       data = response.data;
 
       $scope.monthilai = data.thilai;
+    });
+
+    //cập nhập điểm thi lại
+
+    $http.get("user/json/quanlythilai/headerCapnhapdiemthilai.json")
+    .then(function (response) {
+      $scope.capnhapheader = response.data;
+    });
+
+  $http.get("user/json/quanlythilai/cnthilai10a1.json")
+    .then(function (response) {
+      var data;
+      data = response.data;
+      $scope.capnhapthilai = data.CNThiLai; 
     });
 
   // Cái gì đó ?
@@ -257,7 +269,6 @@ ShoolityApp.controller('ShoolityCtrl', function ($scope, $http) {
   $http.get("user/json/quanlythilai/headerDiemthihocki.json")
     .then(function (response) {
       $scope.diemthiHK = response.data;
-
     });
 
   $http.get("user/json/quanlythilai/v1.json")
