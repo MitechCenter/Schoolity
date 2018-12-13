@@ -326,6 +326,11 @@ ShoolityApp.controller('ShoolityCtrl', function ($scope, $http) {
       }
     }
     //-------------------- KET THUC ĐỊA ĐIỂM ----------------------------------------//
+
+
+
+
+    
 });
 ShoolityApp.run(function ($rootScope) {
   $rootScope.$on("$includeContentLoaded", function (event, templateName) {

@@ -1,13 +1,34 @@
 $(".alert").hide()
+async function checkAll(e){
+    var checkAll = $('#checkAll');
+    if(checkAll.not(':checked')){
+        $(".checkbutton").each(function(){
+        
+                $(this).prop('checked',false);
+
+        });
+    }
+    if(checkAll.is(":checked")){
+        $(".checkbutton").each(function(){
+                $(this).prop('checked',true);
+        });
+    }
+    
+}
 function showDialog(){
     setTimeout(function(){},1000);
     let search = $(".search-addvance");
     if(search.hasClass("fade-out")){
         $(search).removeClass("fade-out");
           $(search).addClass("fade-in");
+          $('#showAdvanceSearch>i').removeClass('fa-chevron-circle-down');
+          $('#showAdvanceSearch>i').addClass('fa-chevron-circle-up');
+        
     }else{
         $(search).removeClass("fade-in");
           $(search).addClass("fade-out");
+         
+
     }
     
 }
@@ -28,12 +49,15 @@ function xemhs(e){
 
 // Listen to hide dialog
 window.addEventListener('mousedown',function(e){
-    let search = $(".search-addvance");
+
+    let search = $(".search-addvance"); 
     if (!search.is(e.target) && search.has(e.target).length === 0) 
     {
         $(search).removeClass("fade-in");
         $(search).addClass("fade-out");
     }
+    $('#showAdvanceSearch>i').removeClass('fa-chevron-circle-up');
+    $('#showAdvanceSearch>i').addClass('fa-chevron-circle-down');
 }); 
 function showAlert(selector) {
     // them class show cho alert
@@ -73,7 +97,7 @@ function showAlertdienthongtin() {
 })();
 visibleAdvanceSearch = false;
 $(document).ready(function () {
-    $(window).click(function (e) {
+        $(window).click(function (e) {
         // Show or hide button "XEM HO SO"
         if(e.target.className.indexOf("ho_ten")==!0){
             $("button[id=xem_ho_so]").css("visibility", "hidden");
@@ -82,12 +106,14 @@ $(document).ready(function () {
             $("button[id=xem_ho_so]").css("visibility", "hidden");
             $(`button[id=xem_ho_so][index=${e.target.getAttribute("index")}]`).css("visibility", "visible");
         }
+       
         // if (e.target.id === "xem_ho_so")
         //     $("#nav-tabContent").html('<div ng-include="TabLayout[0]" />');
     });
     
     https://stackoverflow.com/questions/18537609/jquery-checkbox-check-all
     $("#checkAll").click(function () {
+        console.log(1);
         let currentId = this.id;
         if ($(this).prop("checked")) {
             console.log("checked");
@@ -116,22 +142,10 @@ $(document).ready(function () {
     // bat su kien khi click vao bat ky checkbox
 });
     
-function singleCheckBox(checkBoxId) {
-    if (!idCheckList.includes(checkBoxId) && !$(this).prop("checked"))
-    {
-        idCheckList.push(checkBoxId);
-        if ($('.checkbox:checked').length == $('.checkbox').length-1) {
-            if (!$("#checkAll").prop("checked"))
-                $("#checkAll").prop("checked",true);
-        }
+function singleCheckBox(target,checkBoxId) {
+    if($(target).not(':checked')){
+        $('#checkAll').prop('checked',false);
     }
-    else {
-        if ($("#checkAll").prop("checked"))
-            $("#checkAll").prop("checked",false);
-        idCheckList.splice(idCheckList.indexOf(checkBoxId), 1);
-    }
-    delstate();
-    alert(idCheckList);
 }
 function delstate() {
     if (idCheckList.length > 0) {

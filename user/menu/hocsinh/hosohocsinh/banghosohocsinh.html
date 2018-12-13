@@ -98,7 +98,7 @@
                   <tr>
                      <th>
                         <div class="cell">
-                           <input type="checkbox" name="" id="checkAll" class="checkbox checkbox--red">
+                           <input type="checkbox" name="" id="checkAll"  onclick="checkAll(this)" class="checkbox checkbox--red">
                         </div>
                      </th>
 
@@ -113,7 +113,7 @@
                      <tr ng-repeat="x in danhsach">
                         <td>
                            <div class="cell">
-                              <input type="checkbox" name="" id="{{x.id}}" class="checkbox checkbox--red" onclick="singleCheckBox(this.id)">
+                              <input type="checkbox" name="" id="{{x.id}}"  class="checkbutton checkbox checkbox--red" onclick="singleCheckBox(this,this.id)">
                            </div>
                         </td>
                         <td>{{$index}}</td>
