@@ -1,3 +1,4 @@
+
 .schollity-SearchPanel-Title{
     height: initial;
     padding: 8px;
@@ -8,7 +9,7 @@
     font-weight: bold;
     vertical-align: bottom;
     font-size: 100%;
-    width: 1210px;
+    width: 100%;
 }
 .icon-search-file {
     width: 18px;
@@ -51,8 +52,9 @@
     position: relative;
     background: #3698a7;
     overflow-x: auto;
-    text-align: center;
+    /* text-align: center; */
     padding-bottom: 60px 20px;
+    
 }
 .table-fixed-header-wrapper .table-container {
     overflow-y: auto;

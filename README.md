@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Schoolity
 https://github.com/futureskyprojects/Schoolity
 <br/>
@@ -52,3 +53,6 @@ Sự kiện bắt id tại các dòng có "alert(idCheckList);"<br/>
 <br/>
 <br/>
 <br/>
+=======
+12312
+>>>>>>> 330a25e141c11401e724c3026d4029749a037a47

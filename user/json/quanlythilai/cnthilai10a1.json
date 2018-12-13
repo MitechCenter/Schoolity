@@ -1,0 +1,36 @@
+﻿{
+	"CNThiLai": [
+		{
+			"stt": "1",
+			"MaHs": "THPTPL149",
+			"HoTen": "Hoàng Văn Hòa",
+			"Lop": "10A5",
+			"DiemTrThiLai": "4.7",
+			"DiemSThiLai": "5.2"
+		},
+		{
+			"stt": "2",
+			"MaHs": "THPTPL207",
+			"HoTen": "Hà Minh Quang",
+			"Lop": "10A6",
+			"DiemTrThiLai": "4.7",
+			"DiemSThiLai": "2.4"
+		},
+		{
+			"stt": "3",
+			"MaHs": "THPTPL213",
+			"HoTen": "Mạc Đức Thơm",
+			"Lop": "10A6",
+			"DiemTrThiLai": "4.3",
+			"DiemSThiLai": "1.8"
+		},
+		{
+			"stt": "4",
+			"MaHs": "THPTPL214",
+			"HoTen": "Hoàng Văn Thụy",
+			"Lop": "10A6",
+			"DiemTrThiLai": "4.1",
+			"DiemSThiLai": "0"
+		}
+	]
+}

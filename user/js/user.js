@@ -169,25 +169,43 @@ ShoolityApp.controller('ShoolityCtrl', function ($scope, $http) {
     .then(function (response) {
       var data;
       data = response.data;
-
       $scope.row = data;
     });
   // ------------------------ KET THUC BANG HO SO HOC SINH -------------------------------//
 
   // ------------------------ QUAN LÝ THI LẠI ------------------------------------//
-  // Tải header của table Đăng ký thi lại
+  // Tải header của table đăng kí thi lại
+
+
+  $scope.isHideInColumn = function (id) {
+    let notArr = ['0x01', '0x02', '0x03'];
+    return notArr.includes(id);
+  }
   $http.get("user/json/quanlythilai/headerDangkithilai.json")
     .then(function (response) {
       $scope.thilai = response.data;
     });
-
-  // Tải danh sách học sinh đăng ký môn thi lại
+  // Tải danh sách học sinh đămh kí môn thi lại  môn thi lại
   $http.get("user/json/quanlythilai/dkymonthilai.json")
     .then(function (response) {
       var data;
       data = response.data;
 
       $scope.monthilai = data.thilai;
+    });
+
+    //cập nhập điểm thi lại
+
+    $http.get("user/json/quanlythilai/headerCapnhapdiemthilai.json")
+    .then(function (response) {
+      $scope.capnhapheader = response.data;
+    });
+
+  $http.get("user/json/quanlythilai/cnthilai10a1.json")
+    .then(function (response) {
+      var data;
+      data = response.data;
+      $scope.capnhapthilai = data.CNThiLai; 
     });
 
   // Cái gì đó ?
@@ -251,7 +269,6 @@ ShoolityApp.controller('ShoolityCtrl', function ($scope, $http) {
   $http.get("user/json/quanlythilai/headerDiemthihocki.json")
     .then(function (response) {
       $scope.diemthiHK = response.data;
-
     });
 
   $http.get("user/json/quanlythilai/v1.json")
