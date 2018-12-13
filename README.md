@@ -1,8 +1,17 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Schoolity
 https://github.com/futureskyprojects/Schoolity
 <br/>
 Check git work!
+=======
+# Schoolity
+https://github.com/futureskyprojects/Schoolity
+<br/>
+* Phat:
+	user/phat.css
+	user/menu/hocsinh/hosohocsinh/view
+>>>>>>> 6efa0c786171d7a6473da70076729ab2ec6eed54
 <br/>
 * Ngày 30/11/2018:
 1. Sửa nút cancel của search box không có tác dụng
@@ -52,7 +61,11 @@ C. File schoolity_truong.js trong folder js lớn<br/>
 Sự kiện bắt id tại các dòng có "alert(idCheckList);"<br/>
 <br/>
 <br/>
+<<<<<<< HEAD
 <br/>
 =======
 12312
 >>>>>>> 330a25e141c11401e724c3026d4029749a037a47
+=======
+<br/>
+>>>>>>> 6efa0c786171d7a6473da70076729ab2ec6eed54
