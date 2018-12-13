@@ -53,23 +53,21 @@
 
 
     <!-- Tablen search học sinh -->
-
-
     <div class="table-fixed-header-wrapper">
         <div class="table-container">
             <table class="table-fixed-header table-hover table table-striped ">
-                <thead>
+                <thead class="table-primary">
                     <tr>
-                        <div>
-                            <th ng-repeat="h in tkd" style="width: '{{h.width}}' " >
-                                <div style="color: #fff; display: inline-block; font-size: 12px">
-                                    {{h.mon}}
-                                </div>
-                            </th>
-                        </div>
+
+                        <th ng-repeat="h in tkd" style="max-width:'{{h.width}}'">
+                            <div style="color: #fff; display: inline-block; font-size: 12px; overflow: scroll; /* thanh cuộn */
+                            overflow: hidden; /* ẩn đi */">
+                                {{h.mon}}
+                            </div>
+                        </th>
                     </tr>
                 </thead>
-                <tbody class="table-fixed-header-wrapper table-container">
+                <tbody>
                     <xxx>
                         <tr ng-repeat="x in TKD">
                             <td>{{x.stt}} </td>
@@ -95,7 +93,11 @@
                     </xxx>
                 </tbody>
             </table>
+
+            </table>
         </div>
-        <div class="Clear"></div>
     </div>
+    <!-- end -->
+    <div class="Clear"></div>
+</div>
 </div>

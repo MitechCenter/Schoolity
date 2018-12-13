@@ -108,6 +108,7 @@
         </div>
     </div>
     <!-- table -->
+    
     <div class="table-fixed-header-wrapper">
         <div class="table-container">
             <table class="table-fixed-header table-hover table table-striped ">
@@ -115,8 +116,9 @@
                     <tr>
 
 
-                        <th ng-repeat="h in xeploai" style='width:{{h.width}}'>
-                            <div>{{h.mon}}</div>
+                        <th ng-repeat="h in xeploai" style= "width: '{{h.width}}'">
+                            <div style="color: #fff; display: inline-block; font-size: 12px; overflow: scroll; /* thanh cuộn */
+                            overflow: hidden; /* ẩn đi */">{{h.mon}}</div>
                         </th>
                         <th style="max-width: 60px">
                             <div class="cell">

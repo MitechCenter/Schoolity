@@ -66,9 +66,11 @@
                    <tr>
                        <div >
 
-                           <th ng-repeat="h in thilai" style="width: {{h.width}}">
+                           <th ng-repeat="h in thilai" style="width: '{{h.width}}'">
+                            
 
-                                   <div style="color: #fff; display: inline-block; font-size: 12px">
+                                   <div style="color: #fff; display: inline-block; font-size: 12px; overflow: scroll; /* thanh cuộn */
+                                   overflow: hidden; /* ẩn đi */">
                                        {{h.stt}}
                                        {{h.hoten}}
                                        {{h.lop}}

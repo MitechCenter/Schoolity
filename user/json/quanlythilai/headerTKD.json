@@ -8,93 +8,93 @@
    
     {
         "mon": "Họ và tên",
-        "width": "20.5%",
+        "width": "5%",
         "id":"0x00"
     },
     {
         "mon": "Toán",
-        "width": "7%",
+        "width": "5%",
         "id":"0x00"
     },
     {
         "mon": "Vật lí",
-        "width": "7%",
+        "width": "5%",
         "id":"0x00"
     },
     {
         "mon": "Hóa Học",
-        "width": "7%",
+        "width": "5%",
         "id":"0x00"
     },
     {
         "mon": "Sinh Học",
-        "width": "7%",
+        "width": "5%",
         "id":"0x00"
     },
     {
         "mon": "Tin Học",
-        "width": "7%",
+        "width": "5%",
         "id":"0x00"
     },
     {
         "mon": "Ngữ Văn",
-        "width": "7%",
+        "width": "5%",
         "id":"0x00"
     },
     {
         "mon": "Lịch Sử",
-        "width": "7%",
+        "width": "5%",
         "id":"0x00"
     },
     {
         "mon": "Địa Lí",
-        "width": "7%",
+        "width": "5%",
         "id":"0x00"
     },
     {
         "mon": "Tiếng Anh",
-        "width": "7%",
+        "width": "8%",
         "id":"0x00"
     },
     {
         "mon": "GDCD",
-        "width": "7%",
+        "width": "4%",
         "id":"0x00"
     },
     {
-        "mon": "Công Nghệ",
+        "mon": "CN",
         "width": "7%",
         "id":"0x00"
     },
     {
         "mon": "Thể Dục",
-        "width": "7%",
+        "width": "5%",
         "id":"0x00"
     },
     {
         "mon": "QPAN",
-        "width": "7%",
+        "width": "5%",
         "id":"0x00"
     },
     {
         "mon": "TBcm",
-        "width": "7%",
+        "width": "5%",
         "id":"0x01"
     },
     {
         "mon": "HL",
-        "width": "7%",
+        "width": "5%",
         "id":"0x02"
     },
     {
         "mon": "HK",
-        "width": "7%",
+        "width": "5%",
         "id":"0x03"
     }
     ,
     {
         "mon": "Xếp Hạng",
-        "width": "7%",
+        "width": "5%",
         "id":"0x03"
     }
 

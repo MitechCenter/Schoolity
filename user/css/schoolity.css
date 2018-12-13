@@ -1,4 +1,7 @@
-
+th{
+  height: 100%;
+  
+}
 .schollity-SearchPanel-Title{
     height: initial;
     padding: 8px;
@@ -52,8 +55,10 @@
     position: relative;
     background: #3698a7;
     overflow-x: auto;
-    /* text-align: center; */
-    padding-bottom: 60px 20px;
+    overflow-wrap: normal;
+    overflow-wrap: break-word;
+    
+  
     
 }
 .table-fixed-header-wrapper .table-container {
