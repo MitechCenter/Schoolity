@@ -10,7 +10,6 @@
    <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
    <title>CoreUI Free Bootstrap Admin Template</title>
    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-   <!-- <script src="../jslib/kmlib.js"></script> -->
    <script src="js/user.js"></script>
    <base href="../">
    <!-- Icons-->
@@ -32,95 +31,96 @@
    <link href="./css/separate/tables/table.css" rel="stylesheet">
    <!-- Custom css here -->
    <link href="./user/css/schoolity.css" rel="stylesheet">
+   <link href="./user/css/phat.css" rel="stylesheet">
    <!-- <link href="./css/progress/pace.min.css" rel="stylesheet">
-   <link rel="stylesheet" href="./css/separate/pagination/pagination.css"> -->
-   <base href="../">
-</head>
+      <link rel="stylesheet" href="./css/separate/pagination/pagination.css"> -->
+      <base href="../">
+   </head>
 
-<body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
-   <div ng-app="ShoolityApp" ng-controller="ShoolityCtrl">
-      <header class="app-header navbar">
-         <div class="app-header navbar" ng-include="HeaderBar"></div>
-      </header>
-      <div class="app-body" ng-include="leftMenuURL">
-         <div class="sidebar">
-            <nav class="sidebar-nav">
-               <ul class="nav">
-                  <!-- -->
-                  <li class="nav-item nav-dropdown" *ngFor="let BigName of LeftMenu">
-                     <a class="nav-link nav-dropdown-toggle" href="#">
-                        <i class="nav-icon icon-bell"></i> {{BigName.name}}</a>
-                     <ul class="nav-dropdown-items">
-                        <li class="nav-item">
-                           <a class="nav-link" href="notifications/alerts.html">
-                              Tổ chức thi</a>
+   <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
+      <div ng-app="ShoolityApp" ng-controller="ShoolityCtrl">
+         <header class="app-header navbar">
+            <div class="app-header navbar" ng-include="HeaderBar"></div>
+         </header>
+         <div class="app-body" ng-include="leftMenuURL">
+            <div class="sidebar">
+               <nav class="sidebar-nav">
+                  <ul class="nav">
+                     <!-- -->
+                     <li class="nav-item nav-dropdown" *ngFor="let BigName of LeftMenu">
+                        <a class="nav-link nav-dropdown-toggle" href="#">
+                           <i class="nav-icon icon-bell"></i> {{BigName.name}}</a>
+                           <ul class="nav-dropdown-items">
+                              <li class="nav-item">
+                                 <a class="nav-link" href="notifications/alerts.html">
+                                 Tổ chức thi</a>
+                              </li>
+                           </ul>
                         </li>
-                     </ul>
-                  </li>
 
-               </ul>
-            </nav>
-            <button class="sidebar-minimizer brand-minimizer" type="button"></button>
-         </div>
-      </div>
-      <aside class="aside-menu" ng-include="AsideMenu"></aside>
-      <main class="main">
-         <!-- Breadcrumb-->
-         <ol class="breadcrumb">
-            <div id="function-path">Học sinh > Hồ sơ học sinh</div> <i id="RunningProgress" class="fa fa-circle-o-notch fa-spin fade" style="font-size:24px; color: red; margin-left: 100px"></i>
-            <!-- Breadcrumb Menu-->
-            <li class="breadcrumb-menu d-md-down-none">
-               <div class="btn-group" role="group" aria-label="Button group">
-                  <a class="btn" href="#">
-                     <i class="icon-speech"></i>
-                  </a>
-                  <a class="btn" href="./">
-                     <i class="icon-graph"></i> Dashboard</a>
-                  <a class="btn" href="#">
-                     <i class="icon-settings"></i> Settings</a>
-               </div>
-            </li>
-         </ol>
-         <div class="container-fluid">
-            <!-- alert -->
-            <div>
-               <div id="alert-thanhcong" class="alert alert-info alert-info-border alert-dismissible" role="alert">
-                  <i class="fa fa-check-circle alert-icon" aria-hidden="true"></i>
-                  <div class="alert-content">Thao tác thành công!</div>
-                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                     <span aria-hidden="true">&times;</span>
-                  </button>
-               </div>
-               <div id="alert-dienthongtin" class="alert alert-warning alert-warning-border alert-dismissible" role="alert">
-                  <i class="fa fa-exclamation-triangle alert-icon" aria-hidden="true"></i>
-                  <div class="alert-content">Bạn cần điền đầy đủ thông tin!</div>
-                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                     <span aria-hidden="true">&times;</span>
-                  </button>
+                     </ul>
+                  </nav>
+                  <button class="sidebar-minimizer brand-minimizer" type="button"></button>
                </div>
             </div>
-            <div ng-include="ConfirmDialog"></div>
-            <!-- START MAIN CONTENT -->
-            <div ng-include="CurrentActivity" onload="loaded = true"></div>
-            <!-- END MAIN CONTENT -->
-         </div>
-      </main>
-      <footer class="app-footer" ng-include="Footer"></footer>
-      <!-- Import html code -->
-      <div ng-include="AddNewDialog"></div>
-      <div ng-include="ViewDialog"></div>
-   </div>
-   <!-- end of import -->
-   <!-- CoreUI and necessary plugins-->
-   <script src="vendors/jquery/js/jquery.min.js"></script>
-   <script src="vendors/popper.js/js/popper.min.js"></script>
-   <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
-   <script src="vendors/pace-progress/js/pace.min.js"></script>
-   <script src="vendors/perfect-scrollbar/js/perfect-scrollbar.min.js"></script>
-   <script src="vendors/@coreui/coreui/js/coreui.min.js"></script>
-   <script src="js/schoolity_truong.js"></script>
-   <script src="user/js/osJQueryToast.js"></script>
-   <script src="user/js/osMenuClickEvent.js"></script>
-</body>
+            <aside class="aside-menu" ng-include="AsideMenu"></aside>
+            <main class="main">
+               <!-- Breadcrumb-->
+               <ol class="breadcrumb">
+                  <div id="function-path">Học sinh > Hồ sơ học sinh</div> <i id="RunningProgress" class="fa fa-circle-o-notch fa-spin fade" style="font-size:24px; color: red; margin-left: 100px"></i>
+                  <!-- Breadcrumb Menu-->
+                  <li class="breadcrumb-menu d-md-down-none">
+                     <div class="btn-group" role="group" aria-label="Button group">
+                        <a class="btn" href="#">
+                           <i class="icon-speech"></i>
+                        </a>
+                        <a class="btn" href="./">
+                           <i class="icon-graph"></i> Dashboard</a>
+                           <a class="btn" href="#">
+                              <i class="icon-settings"></i> Settings</a>
+                           </div>
+                        </li>
+                     </ol>
+                     <div class="container-fluid">
+                        <!-- alert -->
+                        <div>
+                           <div id="alert-thanhcong" class="alert alert-info alert-info-border alert-dismissible" role="alert">
+                              <i class="fa fa-check-circle alert-icon" aria-hidden="true"></i>
+                              <div class="alert-content">Thao tác thành công!</div>
+                              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                 <span aria-hidden="true">&times;</span>
+                              </button>
+                           </div>
+                           <div id="alert-dienthongtin" class="alert alert-warning alert-warning-border alert-dismissible" role="alert">
+                              <i class="fa fa-exclamation-triangle alert-icon" aria-hidden="true"></i>
+                              <div class="alert-content">Bạn cần điền đầy đủ thông tin!</div>
+                              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                 <span aria-hidden="true">&times;</span>
+                              </button>
+                           </div>
+                        </div>
+                        <div ng-include="ConfirmDialog"></div>
+                        <!-- START MAIN CONTENT -->
+                        <div ng-include="CurrentActivity" onload="loaded = true"></div>
+                        <!-- END MAIN CONTENT -->
+                     </div>
+                  </main>
+                  <footer class="app-footer" ng-include="Footer"></footer>
+                  <!-- Import html code -->
+                  <div ng-include="AddNewDialog"></div>
+                  <div ng-include="ViewDialog"></div>
+               </div>
+               <!-- end of import -->
+               <!-- CoreUI and necessary plugins-->
+               {% comment %} <script src="vendors/jquery/js/jquery.min.js"></script> {% endcomment %}
+               <script src="vendors/popper.js/js/popper.min.js"></script>
+               <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+               <script src="vendors/pace-progress/js/pace.min.js"></script>
+               <script src="vendors/perfect-scrollbar/js/perfect-scrollbar.min.js"></script>
+               <script src="vendors/@coreui/coreui/js/coreui.min.js"></script>
+               <script src="js/schoolity_truong.js"></script>
+               <script src="user/js/osJQueryToast.js"></script>
+               <script src="user/js/osMenuClickEvent.js"></script>
+            </body>
 
-</html>
+            </html>

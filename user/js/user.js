@@ -9,9 +9,9 @@ var dsLinkMenu = {
     "diemdanh/diemdanh.html",
     "vipham/vipham.html",
     "-- TONG KET DIEM --",
-    "-- tong ket diem --",
-    "-- tong ket diem, xep loai theo khoi --",
-    "-- diem thi hoc ky --",
+    "tongketdiem/tongketdiem.html",
+    "tongketdiem/xeploaitheokhoi.html",
+    "tongketdiem/diemthihocky.html",
     "xeploaihanhkiem/xeploaihanhkiem.html",
     "xeploaihocluc/xeploaihocluc.html",
     "--qlthongtintotnghiep--",
@@ -96,7 +96,6 @@ ShoolityApp.controller('ShoolityCtrl', function ($scope, $http) {
     }
     let showID = 1;
     $scope.CurrentActivity = getPath(showID); // set for start up
-    renewEvent();
     $scope.$on('CurrentActivity', function (event, CurrentActivity) {
       if (CurrentActivity.id == showID)
         return;
@@ -106,7 +105,6 @@ ShoolityApp.controller('ShoolityCtrl', function ($scope, $http) {
           $("#RunningProgress").removeClass("fade");
           $scope.CurrentActivity = getPath(CurrentActivity.id);
           $("#function-path").html(CurrentActivity.path);
-          renewEvent();
         }, function osErr(response) {
           $.toaster({
             priority: 'danger',
@@ -118,24 +116,6 @@ ShoolityApp.controller('ShoolityCtrl', function ($scope, $http) {
     });
   });
 
-  function renewEvent() {
-    // function for reload event set after dom data
-    $scope.showSearch = function () {
-      if (visibleAdvanceSearch == false) {
-        visibleAdvanceSearch = true;
-        $('#formAdvanceSearch').removeClass('fade-out');
-        $('#formAdvanceSearch').addClass('fade-in');
-        $('#showAdvanceSearch i').removeClass('fa-chevron-circle-down');
-        $('#showAdvanceSearch i').addClass('fa-chevron-circle-up');
-      } else {
-        visibleAdvanceSearch = false;
-        $('#formAdvanceSearch').removeClass('fade-in');
-        $('#formAdvanceSearch').addClass('fade-out');
-        $('#showAdvanceSearch i').removeClass('fa-chevron-circle-up');
-        $('#showAdvanceSearch i').addClass('fa-chevron-circle-down');
-      }
-    }
-  }
   // Hàm dùng để lấy đường dẫn khi nhấn vào item có vị trí --index-- trong menu
   function getPath(index) {
     return dsLinkMenu.root + dsLinkMenu.child[index];
@@ -169,25 +149,43 @@ ShoolityApp.controller('ShoolityCtrl', function ($scope, $http) {
     .then(function (response) {
       var data;
       data = response.data;
-
       $scope.row = data;
     });
   // ------------------------ KET THUC BANG HO SO HOC SINH -------------------------------//
 
   // ------------------------ QUAN LÝ THI LẠI ------------------------------------//
-  // Tải header của table Đăng ký thi lại
+  // Tải header của table đăng kí thi lại
+
+
+  $scope.isHideInColumn = function (id) {
+    let notArr = ['0x01', '0x02', '0x03'];
+    return notArr.includes(id);
+  }
   $http.get("user/json/quanlythilai/headerDangkithilai.json")
     .then(function (response) {
       $scope.thilai = response.data;
     });
-
-  // Tải danh sách học sinh đăng ký môn thi lại
+  // Tải danh sách học sinh đămh kí môn thi lại  môn thi lại
   $http.get("user/json/quanlythilai/dkymonthilai.json")
     .then(function (response) {
       var data;
       data = response.data;
 
       $scope.monthilai = data.thilai;
+    });
+
+    //cập nhập điểm thi lại
+
+    $http.get("user/json/quanlythilai/headerCapnhapdiemthilai.json")
+    .then(function (response) {
+      $scope.capnhapheader = response.data;
+    });
+
+  $http.get("user/json/quanlythilai/cnthilai10a1.json")
+    .then(function (response) {
+      var data;
+      data = response.data;
+      $scope.capnhapthilai = data.CNThiLai; 
     });
 
   // Cái gì đó ?
@@ -251,7 +249,6 @@ ShoolityApp.controller('ShoolityCtrl', function ($scope, $http) {
   $http.get("user/json/quanlythilai/headerDiemthihocki.json")
     .then(function (response) {
       $scope.diemthiHK = response.data;
-
     });
 
   $http.get("user/json/quanlythilai/v1.json")
@@ -308,12 +305,7 @@ ShoolityApp.controller('ShoolityCtrl', function ($scope, $http) {
           $scope.xaPhuong.id + " - " + $scope.huyen.id + " - " + $scope.tinh.id + "]");
       }
     }
-    //-------------------- KET THUC ĐỊA ĐIỂM ----------------------------------------//
-
-
-
-
-    
+    //-------------------- KET THUC ĐỊA ĐIỂM ----------------------------------------//    
 });
 ShoolityApp.run(function ($rootScope) {
   $rootScope.$on("$includeContentLoaded", function (event, templateName) {
@@ -325,30 +317,6 @@ ShoolityApp.run(function ($rootScope) {
           title: 'Hoàn tất!',
           message: 'Dữ liệu của bạn đang được hiển thị.'
         });
-        /////// RELOAD JS
-        // $(function(){
-        //   document.getElementById("dcmm").onclick = function () {
-        //     alert(1);
-        //   }
-        //   $(document).ready(function(){
-        //     $("#dcmm").click(function () {
-        //       if (visibleAdvanceSearch == false) {
-        //           visibleAdvanceSearch = true;
-        //           $('#formAdvanceSearch').removeClass('fade-out');
-        //           $('#formAdvanceSearch').addClass('fade-in');
-        //           $('#showAdvanceSearch i').removeClass('fa-chevron-circle-down');
-        //           $('#showAdvanceSearch i').addClass('fa-chevron-circle-up');
-        //       } else {
-        //           visibleAdvanceSearch = false;
-        //           $('#formAdvanceSearch').removeClass('fade-in');
-        //           $('#formAdvanceSearch').addClass('fade-out');
-        //           $('#showAdvanceSearch i').removeClass('fa-chevron-circle-up');
-        //           $('#showAdvanceSearch i').addClass('fa-chevron-circle-down');
-        //       }
-        //    });
-
-        //   });
-        // }())
       }
     }
   });

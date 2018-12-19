@@ -2,7 +2,7 @@
         "name": "Hệ thống",
         "path": "user/#",
         "id": "lv1_MenuObj_00",
-        "ic": "nav-icon icon-bell",
+        "ic": "fa fa-bell-o",
         "sub": [{
                 "name": "Thông tin nhà trường",
                 "path": "user/#",
@@ -63,7 +63,7 @@
         "name": "Học sinh",
         "path": "user/#",
         "id": "lv1_MenuObj_10",
-        "ic": "",
+        "ic": "fa fa-graduation-cap",
         "sub": [{
                 "name": "Hồ sơ học sinh",
                 "path": "user/#",
@@ -162,7 +162,7 @@
         "name": "Cán bộ",
         "path": "user/#",
         "id": "lv1_MenuObj_27",
-        "ic": "",
+        "ic": "fa fa-users",
         "sub": [{
                 "name": "Hồ sơ cán bộ",
                 "path": "user/#",
@@ -268,7 +268,7 @@
         "name": "Thi cử",
         "path": "user/#",
         "id": "lv1_MenuObj_45",
-        "ic": "",
+        "ic": "fa fa-tasks",
         "sub": [{
             "name": "Tổ chức thi",
             "path": "user/#",
@@ -280,7 +280,7 @@
         "name": "Báo cáo",
         "path": "user/#",
         "id": "lv1_MenuObj_47",
-        "ic": "",
+        "ic": "fa fa-file-text",
         "sub": [{
                 "name": "Báo cáo hồ sơ học sinh",
                 "path": "user/#",
@@ -329,7 +329,7 @@
         "name": "Y tế",
         "path": "user/#",
         "id": "lv1_MenuObj_55",
-        "ic": "",
+        "ic": "fa fa-heartbeat",
         "sub": [{
                 "name": "Sức khỏe ngày",
                 "path": "user/#",
@@ -354,7 +354,7 @@
         "name": "Liên lạc",
         "path": "user/#",
         "id": "lv1_MenuObj_59",
-        "ic": "",
+        "ic": "fa fa-address-card-o",
         "sub": [{
                 "name": "PHHS",
                 "path": "user/#",
@@ -409,7 +409,7 @@
         "name": "Danh mục",
         "path": "user/#",
         "id": "lv1_MenuObj_68",
-        "ic": "",
+        "ic": "fa fa-database",
         "sub": [{
                 "name": "Lỗi vi phạm quy chế thi",
                 "path": "user/#",
