@@ -96,7 +96,6 @@ ShoolityApp.controller('ShoolityCtrl', function ($scope, $http) {
     }
     let showID = 1;
     $scope.CurrentActivity = getPath(showID); // set for start up
-    renewEvent();
     $scope.$on('CurrentActivity', function (event, CurrentActivity) {
       if (CurrentActivity.id == showID)
         return;
@@ -106,7 +105,6 @@ ShoolityApp.controller('ShoolityCtrl', function ($scope, $http) {
           $("#RunningProgress").removeClass("fade");
           $scope.CurrentActivity = getPath(CurrentActivity.id);
           $("#function-path").html(CurrentActivity.path);
-          renewEvent();
         }, function osErr(response) {
           $.toaster({
             priority: 'danger',
@@ -118,24 +116,6 @@ ShoolityApp.controller('ShoolityCtrl', function ($scope, $http) {
     });
   });
 
-  function renewEvent() {
-    // function for reload event set after dom data
-    $scope.showSearch = function () {
-      if (visibleAdvanceSearch == false) {
-        visibleAdvanceSearch = true;
-        $('#formAdvanceSearch').removeClass('fade-out');
-        $('#formAdvanceSearch').addClass('fade-in');
-        $('#showAdvanceSearch i').removeClass('fa-chevron-circle-down');
-        $('#showAdvanceSearch i').addClass('fa-chevron-circle-up');
-      } else {
-        visibleAdvanceSearch = false;
-        $('#formAdvanceSearch').removeClass('fade-in');
-        $('#formAdvanceSearch').addClass('fade-out');
-        $('#showAdvanceSearch i').removeClass('fa-chevron-circle-up');
-        $('#showAdvanceSearch i').addClass('fa-chevron-circle-down');
-      }
-    }
-  }
   // Hàm dùng để lấy đường dẫn khi nhấn vào item có vị trí --index-- trong menu
   function getPath(index) {
     return dsLinkMenu.root + dsLinkMenu.child[index];
@@ -325,12 +305,7 @@ ShoolityApp.controller('ShoolityCtrl', function ($scope, $http) {
           $scope.xaPhuong.id + " - " + $scope.huyen.id + " - " + $scope.tinh.id + "]");
       }
     }
-    //-------------------- KET THUC ĐỊA ĐIỂM ----------------------------------------//
-
-
-
-
-    
+    //-------------------- KET THUC ĐỊA ĐIỂM ----------------------------------------//    
 });
 ShoolityApp.run(function ($rootScope) {
   $rootScope.$on("$includeContentLoaded", function (event, templateName) {
@@ -342,30 +317,6 @@ ShoolityApp.run(function ($rootScope) {
           title: 'Hoàn tất!',
           message: 'Dữ liệu của bạn đang được hiển thị.'
         });
-        /////// RELOAD JS
-        // $(function(){
-        //   document.getElementById("dcmm").onclick = function () {
-        //     alert(1);
-        //   }
-        //   $(document).ready(function(){
-        //     $("#dcmm").click(function () {
-        //       if (visibleAdvanceSearch == false) {
-        //           visibleAdvanceSearch = true;
-        //           $('#formAdvanceSearch').removeClass('fade-out');
-        //           $('#formAdvanceSearch').addClass('fade-in');
-        //           $('#showAdvanceSearch i').removeClass('fa-chevron-circle-down');
-        //           $('#showAdvanceSearch i').addClass('fa-chevron-circle-up');
-        //       } else {
-        //           visibleAdvanceSearch = false;
-        //           $('#formAdvanceSearch').removeClass('fade-in');
-        //           $('#formAdvanceSearch').addClass('fade-out');
-        //           $('#showAdvanceSearch i').removeClass('fa-chevron-circle-up');
-        //           $('#showAdvanceSearch i').addClass('fa-chevron-circle-down');
-        //       }
-        //    });
-
-        //   });
-        // }())
       }
     }
   });

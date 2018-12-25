@@ -30,6 +30,6 @@ ShoolityApp.controller('MenuCtrl', function ($scope, $http) {
                         $scope.$emit('CurrentActivity', {"path": $scope.BredcumPath[0] + $scope.BredcumPath[1] + $scope.BredcumPath[2],"id":Number(getNum) - 10});
                     });
             }
-        }())
+        }());
     });
 });

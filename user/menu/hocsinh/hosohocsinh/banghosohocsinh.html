@@ -36,7 +36,7 @@
             <button type="button" class="btn btn-warning text-white" data-toggle="modal" href="#">
                <i class="fa fa-upload" aria-hidden="true"></i> Import
             </button>
-            <button type="button" id="buttonDelete" disabled class="btn btn-danger" data-toggle="modal" href="#"
+            <button type="button" id="buttonDelete" disabled class="btn btn-danger" onclick="showDelete()" data-toggle="modal" href="#"
                data-target="#confirmModal">
                <i class="fa fa-trash-o" aria-hidden="true"></i> Xóa
             </button>
@@ -80,7 +80,7 @@
                   <div class="input-search ">
                      <input type="text" class="input-search-text" placeholder="Tìm nhanh">
                      <div class="button-show-addvance">
-                        <a id="showAdvanceSearch" onclick="showDialog()">
+                        <a id="showAdvanceSearch"  onclick="showDialog()">
                            <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
                         </a>
                      </div>
